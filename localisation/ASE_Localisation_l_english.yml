@@ -25,7 +25,7 @@
 
  #Reformation
  ase_foster_piety: "Foster Piety"
- ase_foster_piety_desc: "Has at least 5 temples or cathedrals"
+ ase_foster_piety_desc: "Has at least 10 temples or cathedrals"
  ase_prepare_war: "Preapare for War"
  ase_prepare_war_desc: "Has joined the Protestant or Catholic League"
  ase_strength_unity: "Strength in Unity"

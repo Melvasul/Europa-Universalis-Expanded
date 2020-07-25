@@ -27,7 +27,7 @@ splendor_triggered_modifier_1 = {
 	}
 	trigger = {
 		custom_trigger_tooltip = {
-			tooltip = RULER_STAT_INFERIOR_4_TOOLTIP
+			tooltip = RULER_STAT_INFERIOR_12_TOOLTIP
 			always = yes
 		}
 	}

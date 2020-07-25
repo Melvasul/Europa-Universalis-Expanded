@@ -84,6 +84,8 @@ age_of_discovery = {
 						OR = {
 							is_subject_of_type = brother_kingdom
 							is_subject_of_type = personal_union
+							is_subject_of_type = salic_personal_union
+							is_subject_of_type = integrated_personal_union
 						}
 					}
 				}
@@ -115,9 +117,23 @@ age_of_discovery = {
 			}
 		}
 		ase_piles_gold = {
-			num_of_owned_provinces_with = {
-				value = 3
-				trade_goods = gold
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				num_of_owned_provinces_with = {
+					value = 3
+					OR = {
+						trade_goods = gold
+						trade_goods = silver
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = gold
+				}
 			}
 		}
 		ase_dynamic_court = {
@@ -271,7 +287,7 @@ age_of_discovery = {
 				tag = LAN
 			}
 			modifier = {
-				idea_cost = -0.15
+				idea_cost = -0.075
 			}
 			ai_will_do = {
 				factor = 100
@@ -434,12 +450,16 @@ age_of_reformation = {
 
 		ase_foster_piety = {
 			num_of_owned_provinces_with = {
-				value = 5
+				value = 10
 				has_tax_building_trigger = yes
 			}
 		}
 		ase_prepare_war = {
 			OR = {
+				AND = {
+					hre_leagues_enabled = yes
+					is_emperor = yes
+				}
 				in_league = protestant
 				in_league = catholic
 			}
@@ -567,7 +587,7 @@ age_of_reformation = {
 				tag = BAV
 			}
 			modifier = {
-				global_autonomy = -0.30
+				global_autonomy = -0.3
 			}
 			ai_will_do = {
 				factor = 100
@@ -600,7 +620,7 @@ age_of_reformation = {
 				tag = PAP
 			}
 			modifier = {
-				leader_land_shock = 1
+				leader_land_shock = 2
 			}
 			ai_will_do = {
 				factor = 100
@@ -837,6 +857,7 @@ age_of_absolutism = {
 		ase_maghrebi_piracy = {
 			allow = {
 				culture_group = maghrebi
+				NOT = { tag = MOR }
 			}
 			modifier = {
 				light_ship_power = 0.20
