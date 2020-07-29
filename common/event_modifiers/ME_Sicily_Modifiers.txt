@@ -1,0 +1,31 @@
+#1
+sic_papal_delegation = {
+	papal_influence = 0.5
+	diplomatic_reputation = 2
+}
+sic_anti_pope_approval = {
+	legitimacy = 1
+	tolerance_heretic = 1
+}
+#Event modifiers
+sic_matteo_carnilivari = {
+	local_development_cost = -0.10
+}
+sic_antonello_messina = {
+	prestige = 1
+}
+sic_giorgio_milano = {
+	local_build_cost = -0.15
+}
+sic_culummara = {
+	local_defensiveness = 0.10
+	local_monthly_devastation = -0.15
+}
+sic_darban = {
+	local_ship_cost = -0.25
+	ship_recruit_speed = -0.25
+}
+sic_salinagrande = {
+	local_production_efficiency = 0.25
+	trade_goods_size_modifier = 0.25
+}

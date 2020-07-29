@@ -1,0 +1,88 @@
+country_decisions = {
+	nap_pizza = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NAP
+				tag = ITA
+				was_tag = NAP
+			}
+		}
+		allow = {
+			has_institution = new_world_i
+			num_of_owned_provinces_with = {
+				value = 3
+				trade_goods = grain
+				base_production = 10
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				trade_goods = livestock
+				base_production = 10
+			}
+			1293 = { #Sevillla
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = NAP_PIZZA_TIME_PROVINCE_BONUS_TOOLTIP
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
+						region = italy_region
+					}
+					add_province_modifier = {
+						name = nap_pizza_time_local
+						duration = -1
+					}
+				}
+				add_country_modifier = {
+					name = nap_pizza_time_global
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nap_king_jerusalem = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NAP
+				AND = {
+					was_tag = NAP
+					tag = TTS
+				}
+			}
+			is_subject = no
+			religion = catholic
+			NOT = { has_country_flag = nap_king_jerusalem_decision_completed }
+		}
+		allow = {
+			palestine_area = {
+				type = all
+				is_core = ROOT
+				religion = catholic
+			}
+		}
+		effect = {
+			set_country_flag = nap_king_jerusalem_decision_completed
+			add_prestige = 25
+			add_papal_influence = 25
+			add_country_modifier = {
+				name = nap_deus_vult
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

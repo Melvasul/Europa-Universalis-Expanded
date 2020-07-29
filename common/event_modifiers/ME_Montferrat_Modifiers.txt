@@ -1,0 +1,26 @@
+#1st slot
+mfa_sweet_moscato = {
+	trade_goods_size_modifier = 0.10
+	province_trade_power_modifier = 0.10
+}
+#2nd slot
+
+#3rd slot
+mfa_for_victory_or_death = {
+	manpower_recovery_speed = 0.33
+	infantry_power = 0.05
+	prestige_from_land = 0.50
+}
+
+#4th slot
+
+#5th slot
+
+#Event
+mfa_greek_influx = {
+	global_institution_spread = 0.15
+	embracement_cost = -0.15
+}
+mfa_italian_knowledge = {
+	advisor_cost = -0.15
+}

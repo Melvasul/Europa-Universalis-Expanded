@@ -1,0 +1,41 @@
+﻿l_english:
+ #1st column
+ 
+ #2nd column
+ 
+ #3rd column
+ tts_sicilian_union_title: "Sicilian Union"
+ tts_sicilian_union_desc: ""
+ tts_dream_ruggero_title: "Dream of Ruggero"
+ tts_dream_ruggero_desc: "Dream of Ruggero"
+
+ #4th column
+
+ #5th column
+
+ #Event
+ .T: ""
+ .D: ""
+ .OPT1: ""
+ .OPT2: ""
+
+ #Modifiers
+ tts_norman_sicilia: "Norman Sicilia"
+ #Opinion modifier
+
+ #Event modifier
+
+ #Decisions modifier
+ tts_royal_palace_modifier: "Reggia di Caserta"
+ tts_maschio_angioino_modifier: "Maschio Angioino"
+
+ #Triggered modifiers
+ union_of_the_crowns: "Union of the Crowns"
+
+ #Decisions
+ tts_royal_palace_title: "Reggia di Caserta"
+ tts_royal_palace_desc: ""
+ tts_maschio_angioino_title: "Maschio Angioino"
+ tts_maschio_angioino_desc: ""
+
+ #Tooltip
