@@ -1,6 +1,6 @@
 splendor_triggered_modifier_1 = {
 	potential = {
-		has_dlc = "Golden Century"
+		has_dlc = "Mandate of Heaven"
 		variable_arithmetic_trigger = {
 			export_to_variable = {
 				which = adm_value
@@ -37,7 +37,7 @@ splendor_triggered_modifier_1 = {
 
 splendor_triggered_modifier_2 = {
 	potential = {
-		has_dlc = "Golden Century"
+		has_dlc = "Mandate of Heaven"
 		variable_arithmetic_trigger = {
 			export_to_variable = {
 				which = adm_value
@@ -94,7 +94,7 @@ splendor_triggered_modifier_2 = {
 
 splendor_triggered_modifier_3 = {
 	potential = {
-		has_dlc = "Golden Century"
+		has_dlc = "Mandate of Heaven"
 		variable_arithmetic_trigger = {
 			export_to_variable = {
 				which = adm_value
