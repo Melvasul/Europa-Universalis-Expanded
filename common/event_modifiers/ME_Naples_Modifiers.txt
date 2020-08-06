@@ -6,7 +6,7 @@ nap_dominus_vobiscum = {
 nap_dominating_adriatic = {
 	trade_efficiency = 0.1
 }
-nap_development3 = {
+nap_tyrrenean_road = {
 	regiment_recruit_speed = -0.25 
 	local_friendly_movement_speed = 0.25
 	supply_limit_modifier = 0.25

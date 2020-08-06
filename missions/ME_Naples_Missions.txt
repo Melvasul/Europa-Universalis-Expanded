@@ -1486,7 +1486,7 @@ naples_missions_5 = {
 			}
 			calabria_area = {
 				add_province_modifier = {
-					name = nap_development3
+					name = nap_tyrrenean_road
 					duration = -1
 				}
 			}
