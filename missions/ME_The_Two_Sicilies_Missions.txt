@@ -217,9 +217,7 @@ the_two_sicilies_mission_3_SIC = {
 			}
 		}
 		effect = {
-			country_event = {
-				id = ME_The_Two_Sicilies_Events.2
-			}
+			country_event = { id = ME_The_Two_Sicilies_Events.2 }
 		}
 	}
 
