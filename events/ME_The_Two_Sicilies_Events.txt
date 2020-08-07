@@ -408,3 +408,94 @@ country_event = {
 		}
 	}
 }
+
+#Nunziatella
+country_event = {
+	id = ME_The_Two_Sicilies_Events.6
+	title = ME_The_Two_Sicilies_Events.6.T
+	desc = ME_The_Two_Sicilies_Events.6.D
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT3
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+
+		}
+	}
+}
+
+#Utriusque Sicilie
+country_event = {
+	id = ME_The_Two_Sicilies_Events.5
+	title = ME_The_Two_Sicilies_Events.5.T
+	desc = ME_The_Two_Sicilies_Events.5.D
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.5.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		FROM = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = subjects }
+					can_create_subject_type = {
+						subject = ROOT
+						subject_type = brother_kingdom
+					}
+				}
+				create_subject = {
+					subject_type = brother_kingdom
+					subject = ROOT
+				}
+			}
+			else = {
+				create_subject = {
+					subject_type = personal_union
+					subject = ROOT
+				}
+			}			
+		}
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.5.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+			clr_country_flag = tts_crowns_request_sent
+		}
+	}
+}
