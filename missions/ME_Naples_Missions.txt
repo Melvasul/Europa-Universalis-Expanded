@@ -1236,7 +1236,7 @@ naples_missions_4 = {
 			}
 			morea_area = {
 				limit = {
-					province_is_on_an_island = no
+					NOT = { province_is_on_an_island = yes }
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
@@ -1257,6 +1257,7 @@ naples_missions_4 = {
 	nap_doors_christianity = {
 		icon = mission_pf_cross
 		required_missions = { nap_crown_greece }
+		position = 7
 		provinces_to_highlight = {
 			OR = {
 				area = morea_area
@@ -1267,19 +1268,18 @@ naples_missions_4 = {
 				NOT = { province_is_on_an_island = yes }
 			}
 		}
-		position = 7
 		trigger = {
 			army_size = TUR
 			morea_area = {
 				NOT = { province_is_on_an_island = yes }
 				country_or_non_sovereign_subject_holds = ROOT
-			}			
+			}
 			148 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			country_event = { id = ME_Naples_Events.10 }
+			country_event = { id = ME_The_Two_Sicilies_Events.8 }
 			thrace_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

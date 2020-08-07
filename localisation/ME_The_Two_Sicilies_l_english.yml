@@ -14,6 +14,12 @@
  #5th column
 
  #Event
+
+ ME_The_Two_Sicilies_Events.8.T: "Restoring the Glory of Greece"
+ ME_The_Two_Sicilies_Events.8.D: ""
+ ME_The_Two_Sicilies_Events.8.OPT1: "Recreate the Kingdom of Greece"
+ ME_The_Two_Sicilies_Events.8.OPT2: "Keep the lands for yourself"
+
  .T: ""
  .D: ""
  .OPT1: ""

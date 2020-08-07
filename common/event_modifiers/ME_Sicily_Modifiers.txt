@@ -7,12 +7,24 @@ sic_anti_pope_approval = {
 	legitimacy = 1
 	tolerance_heretic = 1
 }
-
+sic_subjucation_spanyards = {
+	monarch_military_power = 1
+}
 #2
+sic_norman_navy = {
+	galley_power = 0.1
+}
+sic_difendere_lu_mari = {
+	leader_naval_shock = 1
+	own_coast_naval_combat_bonus = 0.1
+}
+#3
 
-#3 
-
-#4 
+#4
+sic_transumanza = {
+	local_production_efficiency = 0.10
+	local_tax_modifier = 0.10
+}
 
 #5
 sic_parramentu_sicilianu_modifier = {
@@ -48,12 +60,15 @@ sic_salinagrande = {
 	local_production_efficiency = 0.25
 	trade_goods_size_modifier = 0.25
 }
-
-sic_norman_navy = {
-	galley_power = 0.1
+sic_guardia_ospitaliera = {
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.25
 }
-
-sic_difendere_lu_mari = {
-	leader_naval_shock = 1
-	own_coast_naval_combat_bonus = 0.1
+sic_iron_fist = {
+	min_local_autonomy = 0.25
+	province_trade_power_modifier = -0.33
+}
+sic_preserving = {
+	min_local_autonomy = -0.25
+	province_trade_power_modifier = 0.33
 }

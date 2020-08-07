@@ -244,3 +244,117 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Restoring the Glory of Greece
+	id = ME_The_Two_Sicilies_Events.8
+	title = ME_The_Two_Sicilies_Events.8.T
+	desc = ME_The_Two_Sicilies_Events.8.D
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_The_Two_Sicilies_Events.8.OPT1
+
+		trigger = {
+			NOT = { exists = GRE }
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					area = northern_greece_area
+					area = macedonia_area
+					area = morea_area
+					area = thrace_area
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { num_of_free_diplomatic_relations = 1 }
+			}
+		}
+
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { is_core = GRE }
+					culture_group = byzantine
+				}
+				add_core = GRE
+			}
+		}
+		release = GRE
+		GRE = {
+			change_government = monarchy
+			hidden_effect = {
+				set_dynasty = ROOT
+				add_treasury = 20
+				add_yearly_manpower = 10
+				add_yearly_sailors = 10
+			}
+		}
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = subjects }
+				can_create_subject_type = {
+					subject = ROOT
+					subject_type = brother_kingdom
+				}
+			}
+			create_subject = {
+				subject_type = brother_kingdom
+				subject = GRE
+			}
+		}
+		else = { create_march = GRE }
+		northern_greece_area = {
+			limit = {
+				NOT = { is_core = GRE }
+			}
+			add_core = GRE
+			add_permanent_claim = GRE
+		}
+		macedonia_area = {
+			limit = {
+				NOT = { is_core = GRE }
+			}
+			add_core = GRE
+			add_permanent_claim = GRE
+		}
+		morea_area = {
+			limit = {
+				NOT = { is_core = GRE }
+			}
+			add_core = GRE
+			add_permanent_claim = GRE
+		}		
+		aegean_archipelago_area = {
+			limit = {
+				NOT = { is_core = GRE }
+			}
+			add_core = GRE
+			add_permanent_claim = GRE
+		}
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.8.OPT2
+
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = NAP_EVENT10_SUBJECT_SLAVE_TOOLTIP
+		hidden_effect = {
+			every_owned_province = {
+				limit = { region = italy_region }
+				add_province_modifier = {
+					name = nap_subject_slaves
+					duration = 9125
+				}
+			}
+		}
+	}
+}
