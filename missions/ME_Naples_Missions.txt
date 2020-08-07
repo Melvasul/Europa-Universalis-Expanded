@@ -290,7 +290,7 @@ naples_missions_2 = {
 				if = {
 					limit = { owned_by = ROOT }
 					owner = {
-						country_event = { id = ME_Naples_Events.18 }
+						country_event = { id = ME_The_Two_Sicilies_Events.3 }
 					}
 				}
 			}
