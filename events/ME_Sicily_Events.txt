@@ -99,7 +99,7 @@ country_event = { #Neapolitan Renaissance
 			cost_multiplier = 0.5
 		}
 		125 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sic_matteo_carnilivari
 				duration = -1
 			}
@@ -122,8 +122,9 @@ country_event = { #Neapolitan Renaissance
 		}
 		add_country_modifier = {
 			name = sic_antonello_messina
-			duration = 18250
+			duration = -1
 		}
+		change_government_reform_progress = 25
 	}
 
 	option = {
@@ -141,7 +142,7 @@ country_event = { #Neapolitan Renaissance
 			cost_multiplier = 0.5
 		}
 		124 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sic_giorgio_milano
 				duration = -1
 			}
@@ -169,7 +170,7 @@ country_event = { #Civitas Invitissima
 				speed = 0.75
 				cost = 0
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sic_culummara
 				duration = -1
 			}
@@ -188,7 +189,7 @@ country_event = { #Civitas Invitissima
 				speed = 0.75
 				cost = 0
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sic_darban
 				duration = -1
 			}
@@ -208,7 +209,7 @@ country_event = { #Civitas Invitissima
 				speed = 0.75
 				cost = 0
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sic_salinagrande
 				duration = -1
 			}

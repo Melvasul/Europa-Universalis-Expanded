@@ -9,13 +9,14 @@ sic_anti_pope_approval = {
 }
 #Event modifiers
 sic_matteo_carnilivari = {
-	local_development_cost = -0.10
+	local_development_cost = -0.075
 }
 sic_antonello_messina = {
-	prestige = 1
+	prestige = 0.15
 }
 sic_giorgio_milano = {
 	local_build_cost = -0.15
+	allowed_num_of_buildings = 1
 }
 sic_culummara = {
 	local_defensiveness = 0.10
@@ -28,4 +29,13 @@ sic_darban = {
 sic_salinagrande = {
 	local_production_efficiency = 0.25
 	trade_goods_size_modifier = 0.25
+}
+
+sic_norman_navy = {
+	galley_power = 0.1
+}
+
+sic_difendere_lu_mari = {
+	leader_naval_shock = 1
+	own_coast_naval_combat_bonus = 0.1
 }

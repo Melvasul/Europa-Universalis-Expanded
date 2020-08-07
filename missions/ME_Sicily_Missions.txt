@@ -222,16 +222,69 @@ sicily_mission_2 = {
 		icon = develop_naples
 		required_missions = { sic_matter_stability }
 		position = 3
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 125
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
 		trigger = {
+			125 = {
+				AND = {
+					owned_by = ROOT
+				
+					OR = {	
+						base_production = 10
+						num_of_times_improved = 4
+					}
+					
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			
 		}
 		effect = {
 			125 = {
 				create_or_add_center_of_trade_level = { level = 1 }
+				add_building = shipyard
 			}
-			126 = {
-				if = {
+			if = {
+				limit = {
+					NOT = {
+						corsica_sardinia_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				corsica_sardinia_area = {
 					limit = {
-						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = {
+						djerba_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				djerba_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -246,21 +299,57 @@ sicily_mission_2 = {
 		}
 		position = 5
 		trigger = {
-
+			navy_size_percentage = 0.50
+			num_of_galley = 10
 		}
 		effect = {
-
+			add_country_modifier = {
+				name = sic_norman_navy
+				duration = -1 
+			}
+			add_yearly_sailors = 1
+			
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					has_flagship = no
+					any_owned_province = {
+						has_port = yes
+					}
+				}
+			
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					create_flagship = {	
+						name = "Ruggiero"
+						type = galley
+					}
+				}
+			}
 		}
 	}
+
+   
 
 	sic_isle_of_malta = {
 		icon = answer_the_roman_question
 		required_missions = {
 			sic_norman_navy
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 126
+			}
+			NOT = { owned_by = ROOT }
+		}
 		position = 7
 		trigger = {
-
+			126 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		effect = {
 			country_event = {
@@ -276,10 +365,17 @@ sicily_mission_2 = {
 		}
 		position = 8
 		trigger = {
+			#TO DO 
+			#No country, in the Tunisian trade node has a bigger fleet of Root
+			
 
 		}
 		effect = {
-
+			add_country_modifier = {
+				name = sic_difendere_lu_mari
+				duration = -1 
+			}
+			add_navy_tradition = 25
 		}
 	}
 }
