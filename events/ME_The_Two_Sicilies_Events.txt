@@ -170,14 +170,14 @@ country_event = { #The sack of France
 #The Siblings
 country_event = {
 	id = ME_The_Two_Sicilies_Events.3
-	title = ME_Naples_Events.18.T
-	desc = ME_Naples_Events.18.D
+	title = ME_The_Two_Sicilies_Events.3.T
+	desc = ME_The_Two_Sicilies_Events.3.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = ME_Naples_Events.18.OPT1
+		name = ME_The_Two_Sicilies_Events.3.OPT1
 
 		ai_chance = {
 			factor = 50
@@ -228,7 +228,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Naples_Events.18.OPT2
+		name = ME_The_Two_Sicilies_Events.3.OPT2
 
 		ai_chance = {
 			factor = 50
@@ -246,15 +246,15 @@ country_event = {
 }
 
 country_event = { #Restoring the Glory of Greece
-	id = ME_The_Two_Sicilies_Events.8
-	title = ME_The_Two_Sicilies_Events.8.T
-	desc = ME_The_Two_Sicilies_Events.8.D
+	id = ME_The_Two_Sicilies_Events.4
+	title = ME_The_Two_Sicilies_Events.4.T
+	desc = ME_The_Two_Sicilies_Events.4.D
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ME_The_Two_Sicilies_Events.8.OPT1
+		name = ME_The_Two_Sicilies_Events.4.OPT1
 
 		trigger = {
 			NOT = { exists = GRE }
@@ -341,7 +341,7 @@ country_event = { #Restoring the Glory of Greece
 	}
 
 	option = {
-		name = ME_The_Two_Sicilies_Events.8.OPT2
+		name = ME_The_Two_Sicilies_Events.4.OPT2
 
 		ai_chance = {
 			factor = 50
@@ -355,6 +355,56 @@ country_event = { #Restoring the Glory of Greece
 					duration = 9125
 				}
 			}
+		}
+	}
+}
+
+#Utriusque Sicilie
+country_event = {
+	id = ME_The_Two_Sicilies_Events.5
+	title = ME_The_Two_Sicilies_Events.5.T
+	desc = ME_The_Two_Sicilies_Events.5.D
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.5.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		FROM = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = subjects }
+					can_create_subject_type = {
+						subject = ROOT
+						subject_type = brother_kingdom
+					}
+				}
+				create_subject = {
+					subject_type = brother_kingdom
+					subject = ROOT
+				}
+			}
+			else = {
+				create_subject = {
+					subject_type = personal_union
+					subject = ROOT
+				}
+			}			
+		}
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.5.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+			clr_country_flag = tts_crowns_request_sent
 		}
 	}
 }
