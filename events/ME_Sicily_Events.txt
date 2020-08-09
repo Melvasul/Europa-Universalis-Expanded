@@ -89,9 +89,7 @@ country_event = {
 				}
 			}
 		}
-
-		add_years_of_income = -1
-		add_yearly_manpower = -1
+		
 		add_opinion = {
 			who = FROM
 			modifier = nap_helped_rebellion
@@ -181,37 +179,8 @@ country_event = {
 			set_country_flag = naples_france_helped_war
 		}
 	}
-
-	option = {
-		name = ME_Sicily_Events.2.OPT3
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 20
-				FROM = {
-					overlord = {
-						alliance_with = ROOT
-					}
-				}
-			}
-		}
-
-		add_opinion = {
-			who = FROM
-			modifier = nap_denied_help
-		}
-		FROM = {
-			add_opinion = {
-				who = ROOT
-				modifier = nap_denied_help
-			}
-			country_event = {
-				id = ME_Sicily_Events.1
-				days = 30
-			}
-		}
-	}
 }
+
 # For Random Rival
 country_event = {
 	id = ME_Sicily_Events.3
@@ -364,13 +333,15 @@ country_event = {
 	}
 }
 
-country_event = { # Call to War
+# Call to War
+country_event = {
 	id = ME_Sicily_Events.4
 	title = ME_Sicily_Events.4.T
 	desc = ME_Sicily_Events.4.D
-	picture = GFX_ArtofWar
+	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
+	major = yes
 
 	trigger = {
 		SIC = {
@@ -381,7 +352,7 @@ country_event = { # Call to War
 			}
 		}
 		has_opinion_modifier = {
-			who = FROM
+			who = SIC
 			modifier = nap_helped_rebellion_war
 		}
 	}
@@ -395,9 +366,22 @@ country_event = { # Call to War
 		if = {
 			limit = {
 				tag = NAP
+				is_subject_of = ARA
 			}
-			break_union = ARA
+			grant_independence = yes 
+			white_peace = SIC
 			add_truce_with = SIC
+			hidden_effect = {
+				country_event = {
+					id = ME_Sicily_Events.4
+					days = 735
+				}
+			}
+			SIC = {
+				add_yearly_manpower = 3
+				add_years_of_income = 2
+			}
+			custom_tooltip = SIC_NAP_JOINS_WARS_2_YEARS
 		}
 		join_all_offensive_wars_of = SIC
 		every_subject_country = {
@@ -406,7 +390,8 @@ country_event = { # Call to War
 	}
 }
 
-country_event = { #Coronation Day
+#Coronation Day
+country_event = { 
 	id = ME_Sicily_Events.5
 	title = ME_Sicily_Events.5.T
 	desc = ME_Sicily_Events.5.D
@@ -419,7 +404,7 @@ country_event = { #Coronation Day
 	}
 
 	trigger = {
-		tag = NAP
+		tag = SIC
 		is_subject = no
 		is_at_war = no
 	}
@@ -474,6 +459,7 @@ country_event = { #Coronation Day
 	}
 }
 
+#Civitas Invitissima
 country_event = {
 	id = ME_Sicily_Events.6
 	title = ME_Sicily_Events.6.T
@@ -564,7 +550,8 @@ country_event = {
 	}
 }
 
-country_event = { #Neapolitan Renaissance
+#Sicilian Renaissance
+country_event = { 
 	id = ME_Sicily_Events.7
 	title = ME_Sicily_Events.7.T
 	desc = ME_Sicily_Events.7.D
@@ -714,6 +701,7 @@ country_event = {
 	}
 }
 
+#Kingdom of Africa
 country_event = { 
 	id = ME_Sicily_Events.9
 	title = ME_Sicily_Events.9.T

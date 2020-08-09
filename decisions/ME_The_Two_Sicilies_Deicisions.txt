@@ -18,6 +18,10 @@ country_decisions = {
 			NOT = { has_country_flag = tts_built_royal_palace }
 		}
 		allow = {
+			121 = {
+				owned_by = ROOT
+				base_tax = 10
+			}
 			OR = {
 				treasury = 150
 				artist = 3

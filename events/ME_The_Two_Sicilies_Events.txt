@@ -432,10 +432,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-
-		hidden_effect = {
-
-		}
+		
 	}
 
 	option = {
@@ -443,59 +440,69 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-
-		hidden_effect = {
-
-		}
+		
 	}
 }
 
-#Utriusque Sicilie
 country_event = {
-	id = ME_The_Two_Sicilies_Events.5
-	title = ME_The_Two_Sicilies_Events.5.T
-	desc = ME_The_Two_Sicilies_Events.5.D
-	picture = SIEGE_eventPicture
+	id = ME_The_Two_Sicilies_Events.7
+	title = ME_The_Two_Sicilies_Events.7.T
+	desc = ME_The_Two_Sicilies_Events.7.D
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = ME_The_Two_Sicilies_Events.5.OPT1
+		name = ME_The_Two_Sicilies_Events.7.OPT1
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
 
-		FROM = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = subjects }
-					can_create_subject_type = {
-						subject = ROOT
-						subject_type = brother_kingdom
+		add_prestige = 10
+		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = {
+			value = 10
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		if = {
+			limit = { tag = SIC }
+			hidden_effect = {
+				NAP = {
+					every_owned_province = {
+						if = {
+							limit = {
+								has_dlc = "Mandate of Heaven"
+							}
+							add_prosperity = 33
+						}
+						else = {
+							add_devastation = -10
+						}
 					}
 				}
-				create_subject = {
-					subject_type = brother_kingdom
-					subject = ROOT
+			}
+			inherit = NAP
+		}
+		else_if = {
+			limit = { tag = NAP	}
+			hidden_effect = {
+				SIC = {
+					every_owned_province = {
+						if = {
+							limit = {
+								has_dlc = "Mandate of Heaven"
+							}
+							add_prosperity = 33
+						}
+						else = {
+							add_devastation = -10
+						}
+					}
 				}
 			}
-			else = {
-				create_subject = {
-					subject_type = personal_union
-					subject = ROOT
-				}
-			}			
-		}
-	}
-
-	option = {
-		name = ME_The_Two_Sicilies_Events.5.OPT2
-		ai_chance = {
-			factor = 50
-		}
-
-		hidden_effect = {
-			clr_country_flag = tts_crowns_request_sent
+			inherit = SIC
 		}
 	}
 }

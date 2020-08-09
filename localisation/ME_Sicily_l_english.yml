@@ -36,7 +36,7 @@
  sic_crossing_strait_title: "Citra Pharum"
  sic_crossing_strait_desc: "Locally called u Strittu, known in antiquity as the Strait of Scylla and Charybdis from the name of the two homonymous monsters of Scylla and Charybdis which according to the legends damaged the navigation between Calabria and Sicily, later it was known as fretuum siculum and, in more recent times, as Messina lighthouse, purely geopolitical denomination dating back to the medieval kingdom of Sicily in 1108. \nThe kingdom of Citra Pharum await us, the land of our cousin shall be united once again under the crown of Sicily."
  sic_apulia_title: "Apulia"
- sic_apulia_desc: "The County of Puglia was founded by Guglielmo I d'Altavilla, in September 1042 in Melfi, it is an area that is not yet homogeneous, acquired as a "leopard spot". The whole region, with the exception of Melfi, is divided into twelve baronies, established for the benefit of the Norman chiefs and assigned in the territories of Capitanata, Apulia and Irpinia, up to the Vulture where Melfi is the capital. The Normans divide the lands conquered or to be conquered into twelve counties. The Sovereign attributes the fiefdoms according to rank and merit and each of the leaders will devote himself to conquering what is granted. \ nSince the first Crusades, Puglia, and in particular the port of Brindisi, became the main embarkation point for the Orient for the numerous knights and pilgrims going to the Holy Land."
+ sic_apulia_desc: "The County of Puglia was founded by Guglielmo I d'Altavilla, in September 1042 in Melfi, it is an area that is not yet homogeneous, acquired as a \"leopard spot\". The whole region, with the exception of Melfi, is divided into twelve baronies, established for the benefit of the Norman chiefs and assigned in the territories of Capitanata, Apulia and Irpinia, up to the Vulture where Melfi is the capital. The Normans divide the lands conquered or to be conquered into twelve counties. The Sovereign attributes the fiefdoms according to rank and merit and each of the leaders will devote himself to conquering what is granted. \nSince the first Crusades, Puglia, and in particular the port of Brindisi, became the main embarkation point for the Orient for the numerous knights and pilgrims going to the Holy Land."
  sic_epirus_title: "Epirus"
  sic_epirus_desc: "The death of king Ruggero the Second when our country was surrounded by the forces of Pope Adrian IV and Manuel I Komnenos and an open rebellion within our beautiful lands in Apulia, led by many barons, halted any conquest that was planned for the land of Epirus and Greece. \nWhile our enemies stand idle, heedlessly unknowning that we decide what the tides will bring, will ravage their lands claim Epirus and free it, hide, the normans are coming."
  sic_cradle_knowledge_title: "Cradle of Knowledge"
@@ -64,7 +64,6 @@
  ME_Sicily_Events.2.D: ""
  ME_Sicily_Events.2.OPT1: "Send them something, they will arrange by themselves"
  ME_Sicily_Events.2.OPT2: "We will meet them on the battlefield"
- ME_Sicily_Events.2.OPT3: "We will not hunger the Spanyards"
 
  ME_Sicily_Events.3.T: "Sicilian Request"
  ME_Sicily_Events.3.D: ""
@@ -131,3 +130,6 @@
  sic_darban: "Darban"
  sic_salinagrande: "Salinagrande"
  sic_guardia_ospitaliera: "Guardia Ospitaliera"
+
+ #Tooltips
+ SIC_NAP_JOINS_WARS_2_YEARS: "§Y[NAP.Root.GetName]§! will join the war in 2 years, they have sent a gift to fight our oppressor"

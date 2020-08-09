@@ -83,7 +83,6 @@ nap_european_doors = {
 }
 nap_champion_christianity = {
 	monarch_diplomatic_power = 1
-	accept_vassalization_reasons = 20
 }
 
 #5th column
