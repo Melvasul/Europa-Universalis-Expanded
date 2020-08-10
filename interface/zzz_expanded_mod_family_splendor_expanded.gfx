@@ -1,0 +1,7 @@
+spriteTypes = {
+	# Mod Icon:
+	spriteType = {
+		name = "GFX_mod_icon_splendor_expanded"
+		textureFile = "gfx/interface/expanded_mod_family/splendor_expanded_icon_active.dds"
+	}
+}

@@ -46,6 +46,10 @@
  ME_The_Two_Sicilies_Events.6.OPT2: "let us focus on the infantry"
  ME_The_Two_Sicilies_Events.6.OPT3: "our cavalry is in dire need of improvement"
 
+ ME_The_Two_Sicilies_Events.7.T: "Sicilian Union"
+ ME_The_Two_Sicilies_Events.7.D: ""
+ ME_The_Two_Sicilies_Events.7.OPT1: "We are one"
+
  .T: ""
  .D: ""
  .OPT1: ""
