@@ -765,8 +765,8 @@ country_event = {
 		}
 		
 		add_power_projection = {
-			type = declared_war_at_rival
-			amount = 10
+			type = eclipsed_rival
+			amount = 25
 		}
 	}
 }

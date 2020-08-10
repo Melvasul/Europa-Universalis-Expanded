@@ -186,7 +186,6 @@ country_event = { # For France
 				who = ROOT
 				modifier = nap_helped_rebellion_war
 			}
-			set_country_flag = naples_france_helped_war
 		}
 	}
 
@@ -326,7 +325,6 @@ country_event = { # For Austria
 				who = ROOT
 				modifier = nap_helped_rebellion_war
 			}
-			set_country_flag = naples_austria_helped_war
 		}
 	}
 
@@ -398,7 +396,8 @@ country_event = { # Call to War
 	}
 }
 
-country_event = { #Their demands
+#Subjucation of Milan
+country_event = {
 	id = ME_Naples_Events.5
 	title = ME_Naples_Events.5.T
 	desc = ME_Naples_Events.5.D
@@ -408,79 +407,25 @@ country_event = { #Their demands
 
 	trigger = {
 		tag = NAP
-		is_subject = no
-		is_at_war = no
 		OR = {
-			has_country_flag = naples_france_helped_war
-			has_country_flag = naples_austria_helped_war
+			overlord_of = MLO
+			owns = 104
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
 	}
 
 	option = {
 		name = ME_Naples_Events.5.OPT1
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
 
-		if = { #if has chosen France help
-			limit = {
-				has_country_flag = naples_france_helped_war
-			}
-			if = {
-				limit = {
-					has_heir = yes
-				}
-				kill_heir = yes
-			}
-			kill_ruler = yes
-			set_dynasty = FRA
-		}
-
-		else_if = { #if has chosen Austrian help
-			limit = {
-				has_country_flag = naples_austria_helped_war
-			}
-			if = {
-				limit = {
-					has_heir = yes
-				}
-				kill_heir = yes
-			}
-			kill_ruler = yes
-			set_dynasty = HAB
-		}
-	}
-
-	option = {
-		name = ME_Naples_Events.5.OPT2
-		ai_chance = {
-			factor = 50
-		}
-
-		if = { #if has chosen France help
-			limit = {
-				has_country_flag = naples_france_helped_war
-			}
-			FRA = {
-				add_casus_belli = {
-					target = ROOT
-					type = cb_annex
-					months = 300
-				}
-			}
-		}
-
-		else_if = { #if has chosen Austrian help
-			limit = {
-				has_country_flag = naples_austria_helped_war
-			}
-			HAB = {
-				add_casus_belli = {
-					target = ROOT
-					type = cb_annex
-					months = 300
-				}
-			}
+		add_power_projection = {
+			type = eclipsed_rival
+			amount = 25
 		}
 	}
 }
@@ -830,6 +775,114 @@ country_event = { #Sicilian Independence
 	}
 }
 
+country_event = { #Repubblica Marinara d'Amalfi
+	id = ME_Naples_Events.10
+	title = ME_Naples_Events.10.T
+	desc = ME_Naples_Events.10.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		2983 = { 
+			owned_by = ROOT
+			has_province_modifier = nap_restore_republic
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			2983 = { rename_capital = "Amalfi" }
+		}
+	}
+	option = {
+		name = ME_Naples_Events.10.OPT1
+
+		ai_chance = {
+			factor = 25
+		}
+		
+		2983 = {
+			change_trade_goods = naval_supplies
+			add_permanent_province_modifier = {
+				name = nap_the_arsenal
+				duration = -1
+			}
+			add_base_production = 2
+		}
+	}
+
+	option = {
+		name = ME_Naples_Events.10.OPT2
+
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			is_expanded_mod_active = { mod = trade_goods }
+		}
+		
+		2983 = {
+			change_trade_goods = lumber
+			add_permanent_province_modifier = {
+				name = ven_piles_supplies
+				duration = -1
+			}
+			random_list = {
+				33 = { add_base_tax = 2 }
+				33 = { add_base_production = 2 }
+				33 = { add_base_manpower = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = ME_Naples_Events.10.OPT3
+
+		ai_chance = {
+			factor = 25
+		}
+		
+		2983 = {
+			change_trade_goods = paper
+			add_base_tax = 3
+			add_permanent_province_modifier = {
+				name = nap_charta_bambagina
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = ME_Naples_Events.10.OPT4
+
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			is_expanded_mod_active = { mod = trade_goods }
+		}
+		
+		2983 = {
+			if = {
+				limit = {
+					NOT = { trade_goods = citrus }
+				}
+				change_trade_goods = citrus
+			}
+			add_base_manpower = 3
+			add_permanent_province_modifier = {
+				name = nap_sfusato_amalfitano
+				duration = -1
+			}
+		}
+	}
+}
+
 country_event = { #The Throne of Provence for Provence
 	id = ME_Naples_Events.11
 	title = ME_Naples_Events.11.T
@@ -1030,7 +1083,8 @@ country_event = { #The Crown of Jerusalem
 	}
 }
 
-country_event = { #Anjou
+#Anjou
+country_event = {
 	id = ME_Naples_Events.14
 	title = ME_Naples_Events.14.T
 	desc = ME_Naples_Events.14.D
@@ -1058,8 +1112,12 @@ country_event = { #Anjou
 		}
 		
 		add_prestige = 20
-		add_legitimacy = 10
-
+		if = {
+			limit = {
+				government = monarchy
+			}
+			add_legitimacy = 10
+		}
 		178 = {
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
@@ -1119,114 +1177,6 @@ country_event = { #The fall of the infamous Doge
 			add_base_tax = 3
 			add_base_production = 1
 			add_base_manpower = 2
-		}
-	}
-}
-
-country_event = { #Repubblica Marinara d'Amalfi
-	id = ME_Naples_Events.19
-	title = ME_Naples_Events.19.T
-	desc = ME_Naples_Events.19.D
-	picture = CITY_DEVELOPMENT_eventPicture
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	trigger = {
-		2983 = { 
-			owned_by = ROOT
-			has_province_modifier = nap_restore_republic
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			2983 = { rename_capital = "Amalfi" }
-		}
-	}
-	option = {
-		name = ME_Naples_Events.19.OPT1
-
-		ai_chance = {
-			factor = 25
-		}
-		
-		2983 = {
-			change_trade_goods = naval_supplies
-			add_permanent_province_modifier = {
-				name = nap_the_arsenal
-				duration = -1
-			}
-			add_base_production = 2
-		}
-	}
-
-	option = {
-		name = ME_Naples_Events.19.OPT2
-
-		ai_chance = {
-			factor = 25
-		}
-		trigger = {
-			is_expanded_mod_active = { mod = trade_goods }
-		}
-		
-		2983 = {
-			change_trade_goods = lumber
-			add_permanent_province_modifier = {
-				name = ven_piles_supplies
-				duration = -1
-			}
-			random_list = {
-				33 = { add_base_tax = 2 }
-				33 = { add_base_production = 2 }
-				33 = { add_base_manpower = 2 }
-			}
-		}
-	}
-
-	option = {
-		name = ME_Naples_Events.19.OPT3
-
-		ai_chance = {
-			factor = 25
-		}
-		
-		2983 = {
-			change_trade_goods = paper
-			add_base_tax = 3
-			add_permanent_province_modifier = {
-				name = nap_charta_bambagina
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = ME_Naples_Events.19.OPT4
-
-		ai_chance = {
-			factor = 25
-		}
-		trigger = {
-			is_expanded_mod_active = { mod = trade_goods }
-		}
-		
-		2983 = {
-			if = {
-				limit = {
-					NOT = { trade_goods = citrus }
-				}
-				change_trade_goods = citrus
-			}
-			add_base_manpower = 3
-			add_permanent_province_modifier = {
-				name = nap_sfusato_amalfitano
-				duration = -1
-			}
 		}
 	}
 }
