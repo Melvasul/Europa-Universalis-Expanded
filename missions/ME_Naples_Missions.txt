@@ -1410,7 +1410,7 @@ naples_missions_5 = {
 	has_country_shield = yes
 
 	nap_renaissance = {
-		icon = rein_in_the_nobles
+		icon = sponsor_the_arts
 		required_missions = { }
 		position = 3
 		trigger = {
