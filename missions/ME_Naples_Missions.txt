@@ -1414,6 +1414,7 @@ naples_missions_5 = {
 		required_missions = { }
 		position = 3
 		trigger = {
+			is_institution_enabled = renaissance
 			OR = {
 				ADM = 3
 				has_adm_advisor_2 = yes
