@@ -638,94 +638,66 @@ country_event = { #A request from Naples for #PAP
 	option = {
 		name = ME_Naples_Events.8.OPT1
 		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 3
-				OR = {
-					has_opinion = {
-						who = PAP
-						value = 100
-					}
-					PAP = {
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-					}
-				}
-			}
-		}
-		FROM = {
-			add_years_of_income = -1
-		}
-		add_years_of_income = 1
-		central_italy_area = {
-			limit = {
-				owned_by = ROOT
-				has_port = yes
-				NOT = { is_core = FROM }
-			}
-			add_core = FROM
-			cede_province = FROM
-			remove_core = ROOT
-		}
-	}
-
-	option = {
-		name = ME_Naples_Events.8.OPT2
-		ai_chance = {
 			factor = 33
 		}
 		if = {
 			limit = {
 				religion = catholic
-				owns = 125
 			}
-			125 = { #Palermo
-				if = {
-					limit = { has_cardinal = no }
-					add_cardinal = yes
+			if = {
+				limit = {
+					owns = 125
 				}
-				else_if = {
-					limit = {
-						has_cardinal = yes
-						has_building = temple
+				125 = { #Palermo
+					if = {
+						limit = {
+							has_cardinal = no
+						}
+						add_cardinal = yes
 					}
-					remove_building = temple
-					add_building_construction = {
-						building = cathedral
-						speed = 0.75
-						cost = 0
+					else_if = {
+						limit = {
+							has_cardinal = yes
+							has_building = temple
+						}
+						remove_building = temple
+						add_building_construction = {
+							building = cathedral
+							speed = 0.75
+							cost = 0
+						}
 					}
-				}
-				else_if = {
-					limit = { has_cardinal = yes }
-					add_building_construction = {
-						building = temple
-						speed = 0.75
-						cost = 0
+					else_if = {
+						limit = { 
+							has_cardinal = yes
+						}
+						add_building_construction = {
+							building = temple
+							speed = 0.75
+							cost = 0
+						}
 					}
-				}
-				else = {
-					add_base_tax = 2
+					else = {
+						add_base_tax = 2
+					}
 				}
 			}
-		}
-		else = {
-			FROM = {
-				random_owned_province = {
-					limit = {
-						has_cardinal = no
+			else = {
+				FROM = {
+					random_owned_province = {
+						limit = {
+							has_cardinal = no
+						}
+						add_cardinal = yes
 					}
-					add_cardinal = yes
-				}
-				if = {
-					limit = { religion = catholic }
-					add_papal_influence = 25
-				}
-				else = {
-					add_legitimacy_equivalent = {
-						value = 20
+					if = {
+						limit = { religion = catholic }
+						add_papal_influence = 25
+					}
+					else = {
+						add_legitimacy_equivalent = {
+							value = 20
+						}
 					}
 				}
 			}
@@ -733,7 +705,7 @@ country_event = { #A request from Naples for #PAP
 	}
 
 	option = {
-		name = ME_Naples_Events.8.OPT3
+		name = ME_Naples_Events.8.OPT2
 		ai_chance = {
 			factor = 33
 			modifier = {
