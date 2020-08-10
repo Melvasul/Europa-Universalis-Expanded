@@ -26,8 +26,8 @@ nap_sicilian_ruling = {
 
 #3rd column
 nap_struggle_anew = {
-	land_morale = 0.1
-	naval_morale = 0.1
+	land_morale = 0.05
+	infantry_power = 0.10
 }
 nap_legacy_ruggero = {
 	local_development_cost = -0.1 

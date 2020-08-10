@@ -119,56 +119,6 @@ the_two_sicilies_mission_3_NAP = {
 			}
 		}
 	}
-
-	tts_dream_ruggero = {
-		icon = king_of_sicily
-		required_missions = {
-			tts_sicilian_union
-		}
-		position = 11
-		provinces_to_highlight = {
-			OR = {
-				area = apulia_area
-				area = calabria_area
-				area = western_sicily_area
-				area = sicily_area
-				area = naples_area
-			}
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			}
-		}
-		trigger = {
-			stability = 2
-			legitimacy_equivalent = 90
-			apulia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			calabria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			western_sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = tts_norman_sicilia
-				duration = -1
-			}
-		}
-	}
 }
 
 the_two_sicilies_mission_3_SIC = {
@@ -244,6 +194,27 @@ the_two_sicilies_mission_3_SIC = {
 		effect = {
 			country_event = {
 				id = ME_The_Two_Sicilies_Events.7
+			}
+		}
+	}
+}
+
+the_two_sicilies_mission = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = TTS
+		OR = {
+			was_tag = NAP
+			was_tag = SIC
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
 			}
 		}
 	}

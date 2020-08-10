@@ -34,7 +34,7 @@ sicily_mission_1 = {
 						value = 100
 					}
 				}
-			}	
+			}
 			else = {
 				any_country = {
 					is_papal_controller = yes
@@ -43,27 +43,13 @@ sicily_mission_1 = {
 						value = 125
 					}
 				}
-			}		
+			}
 		}
 		effect = {
-			if = {
-				limit = {
-					125 = {
-						owned_by = ROOT
-						has_cardinal = no
-					}
-				}
-				125 = {
-					add_cardinal = yes
-				}
-			}
-			else = {
-				random_owned_province = {
-					limit = { has_cardinal = no }
-					add_cardinal = yes
-				}
-			}
 			add_papal_influence = 25
+			random_owned_province = {
+				add_cardinal = yes
+			}
 		}
 	}
 
@@ -117,38 +103,59 @@ sicily_mission_1 = {
 				}
 			}
 			else = {
-				125 = {
-					if = {
-						limit = { has_cardinal = no }
-						add_cardinal = yes
-					}
-					else_if = {
-						limit = {
-							has_cardinal = yes
-							has_building = temple
-						}
-						remove_building = temple
-						add_building_construction = {
-							building = cathedral
-							speed = 0.75
-							cost = 0
-						}
-					}
-					else_if = {
-						limit = { has_cardinal = yes }
-						add_building_construction = {
-							building = temple
-							speed = 0.75
-							cost = 0
-						}
-					}
-					else = {
-						add_base_tax = 2
-					}
-				}
 				add_country_modifier = {
 					name = sic_anti_pope_approval
 					duration = -1
+				}
+				if = {
+					limit = {
+						owns = 125
+					}
+					125 = { #Palermo
+						if = {
+							limit = {
+								has_cardinal = no
+							}
+							add_cardinal = yes
+						}
+						else_if = {
+							limit = {
+								has_cardinal = yes
+								has_building = temple
+							}
+							remove_building = temple
+							add_building_construction = {
+								building = cathedral
+								speed = 0.75
+								cost = 0
+							}
+						}
+						else_if = {
+							limit = { 
+								has_cardinal = yes
+							}
+							add_building_construction = {
+								building = temple
+								speed = 0.75
+								cost = 0
+							}
+						}
+						else = {
+							add_base_tax = 2
+						}
+					}
+				}
+				else = {
+					random_owned_province = {
+						limit = {
+							has_cardinal = no
+						}
+						add_cardinal = yes
+					}
+					if = {
+						limit = { religion = catholic }
+						add_papal_influence = 25
+					}
 				}
 			}
 		}

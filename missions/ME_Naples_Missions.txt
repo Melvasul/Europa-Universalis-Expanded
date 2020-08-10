@@ -35,6 +35,15 @@ naples_missions_1 = {
 					}
 				}
 			}
+			else = {
+				any_country = {
+					is_papal_controller = yes
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
 		}
 		effect = {
 			random_owned_province = {

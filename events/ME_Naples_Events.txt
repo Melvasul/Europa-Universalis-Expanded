@@ -454,8 +454,8 @@ country_event = { #Coronation Day
 			factor = 50
 		}
 
-		add_prestige = 25
-		add_legitimacy = 25
+		add_prestige = 10
+		add_legitimacy = 15
 		if = {
 			limit = {
 				has_heir = yes
@@ -493,8 +493,8 @@ country_event = { #Coronation Day
 			factor = 50
 		}
 
-		add_prestige = 25
-		add_legitimacy = 25
+		add_prestige = 10
+		add_legitimacy = 15
 	}
 }
 
@@ -639,11 +639,6 @@ country_event = { #A request from Naples for #PAP
 						limit = { religion = catholic }
 						add_papal_influence = 25
 					}
-					else = {
-						add_legitimacy_equivalent = {
-							value = 20
-						}
-					}
 				}
 			}
 		}
@@ -673,7 +668,17 @@ country_event = { #A request from Naples for #PAP
 					}
 				}
 			}
-		}
+			modifier = {
+				factor = 0
+					OR = {
+						alliance_with = NAP
+						has_opinion = {
+							who = NAP
+							value = 100
+						}
+					}
+				}
+			}
 		
 		FROM = {
 			add_casus_belli = {
