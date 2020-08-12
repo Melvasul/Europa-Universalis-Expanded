@@ -536,7 +536,6 @@ sicily_mission_3 = {
 		required_missions = { sic_gain_independence }
 		trigger = {
 			sicily_area = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 				NOT = { unrest = 3 }
 				NOT = { province_id = 126 }
@@ -1074,7 +1073,6 @@ sicily_mission_5 = {
 					is_subject_of = NAP
 				}
 				naples_area = {
-					type = all
 					NOT = { province_id = 121 }
 					OR = {
 						owned_by = NAP
@@ -1083,7 +1081,6 @@ sicily_mission_5 = {
 				}
 			}
 			naples_area = {
-				type = all
 				NOT = { province_id = 121 }
 				country_or_non_sovereign_subject_holds = ROOT
 			}
