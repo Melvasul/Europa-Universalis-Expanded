@@ -50,10 +50,11 @@
  ME_The_Two_Sicilies_Events.7.D: ""
  ME_The_Two_Sicilies_Events.7.OPT1: "We are one"
 
- .T: ""
- .D: ""
- .OPT1: ""
- .OPT2: ""
+ ME_The_Two_Sicilies_Events.8.T: "A Promising Candidate"
+ ME_The_Two_Sicilies_Events.8.D: ""
+ ME_The_Two_Sicilies_Events.8.OPT1: "He will be a wonderful general"
+ ME_The_Two_Sicilies_Events.8.OPT2: "His role in the military cannot be changed"
+ ME_The_Two_Sicilies_Events.8.OPT3: "Have you looked at his paintings?"
 
  #Modifiers
  #2

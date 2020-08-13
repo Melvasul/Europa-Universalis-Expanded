@@ -1,0 +1,143 @@
+﻿l_english:
+ #1st slot
+ mfa_moscato_title: "Moscato d'Asti"
+ mfa_moscato_desc: ""
+ mfa_unitiy_title: "Unity"
+ mfa_unitiy_desc: ""
+ _title: ""
+ _desc: ""
+ _title: ""
+ _desc: ""
+ 
+ #2nd slot
+ mfa_ligurian_shores_title: "Ligurian Shores"
+ mfa_ligurian_shores_desc: ""
+ mfa_naval_preparation_title: "Naval Preparation"
+ mfa_naval_preparation_desc: "The warming sun returns again, and melts away the snow. The sea is freed from icy chains, winter is letting go. \nStanding on the ocean side, we can hear the waves. Calling us out with tide, to sail into our fate. \nOur ships await us by the shore, time has come to leave. Our country, family and homes, for riches in the east.\nIt carries us out to sea, with hope of fame and pride. And glorious all will be, that with sword in hand will die."
+ _title: ""
+ _desc: ""
+ _title: ""
+ _desc: ""
+
+ #3rd slot
+ mfa_resurgence_title: "Resurgence"
+ mfa_resurgence_desc: "Time, has come to wash our shame away, to erase the image of defeat. \nWe, have licked our wounds,restored our strength, and our vengeance will be oh so sweet. \n\nThey thought they had us down, that we'd never rise again, they will learn that they were deadly wrong, what's owed will be repaid."
+ mfa_rising_power_title: "Rising Power"
+ mfa_rising_power_desc: "Since I was born they have kept me down, they have forced me to conform. I will tear down their holy crown in a vengeful thunder storm. \nI loathe their bloody righteous ways it fills me with despise, fueling flames of violent rage, I will be their world's demise. \nAll this rage, and all this hate, it burns me deep inside, and still it is, the only thing, keeping me alive. Dark ambition within my heart and it's aching to break free, the one true nature of my soul, the giant lives in me."
+ mfa_only_war_title: "There is Only War"
+ mfa_only_war_desc: ""
+ _title: ""
+ _desc: ""
+ _title: ""
+ _desc: ""
+
+ #4th slot
+ mfa_conquest_piedmont_title: "Conquest of Piedmont"
+ mfa_conquest_piedmont_desc: ""
+ mfa_securing_mainland_title: "Securing Mainland"
+ mfa_securing_mainland_desc: ""
+ _title: ""
+ _desc: ""
+ _title: ""
+ _desc: ""
+
+ #5th slot
+ mfa_umanesimo_title: "Umanesimo"
+ mfa_umanesimo_desc: ""
+ mfa_rinascimento_title: "Rinascimento"
+ mfa_rinascimento_desc: ""
+ mfa_development1_title: "Development 1"
+ mfa_development1_desc: ""
+ _title: ""
+ _desc: ""
+ _title: ""
+ _desc: ""
+
+ #Events
+
+ ME_Montferrat_Events.1.T: "For Victory or Death"
+ ME_Montferrat_Events.1.D: "So Raise, raise the flag once more, and the eagle will be fed. \nMarch, again we march to war, we will march for victory or death. \nPain, the pain and suffering, is but a bleak and distant fading dream. \nShame, our disgrace; a withering thought, finally our names will be redeemed. \n\n"
+ ME_Montferrat_Events.1.OPT2: "King §Y[FRA.Monarch.GetName]§! of France will protect us!"
+ ME_Montferrat_Events.1.OPT1: "Sir §Y[MLO.Monarch.GetName]§! of Milan would meet our offer"
+ ME_Montferrat_Events.1.OPT3: "A rival of Savoy will surely help!"
+
+ ME_Montferrat_Events.2.T: ""
+ ME_Montferrat_Events.2.D: ""
+ ME_Montferrat_Events.2.OPT1: "Send them something, they will arrange by themselves"
+ ME_Montferrat_Events.2.OPT2: "We will meet them on the battlefield"
+ ME_Montferrat_Events.2.OPT3: "We cannot harsh our relationships with the Spanish crown"
+
+ ME_Montferrat_Events.3.T: ""
+ ME_Montferrat_Events.3.D: ""
+ ME_Montferrat_Events.3.OPT1: "Send them something, they will arrange by themselves"
+ ME_Montferrat_Events.3.OPT2: "We will meet them on the battlefield"
+ ME_Montferrat_Events.3.OPT3: "We cannot harsh our relationships with the Spanish crown"
+
+ ME_Montferrat_Events.4.T: ""
+ ME_Montferrat_Events.4.D: ""
+ ME_Montferrat_Events.4.OPT1: "Send them something, they will arrange by themselves"
+ ME_Montferrat_Events.4.OPT2: "We will meet them on the battlefield"
+ ME_Montferrat_Events.4.OPT3: "We cannot harsh our relationships with the Spanish crown"
+
+ ME_Montferrat_Events.5.T: "Call to Arms"
+ ME_Montferrat_Events.5.D: ""
+ ME_Montferrat_Events.5.OPT1: ""
+
+ ME_Montferrat_Events.6.T: ""
+ ME_Montferrat_Events.6.D: ""
+ ME_Montferrat_Events.6.OPT1: ""
+ ME_Montferrat_Events.6.OPT2: ""
+
+ ME_Montferrat_Events.7.T: "Greek Knowledge"
+ ME_Montferrat_Events.7.D: ""
+ ME_Montferrat_Events.7.OPT1: "Our doors will always been open to strangers"
+ ME_Montferrat_Events.7.OPT2: "We shall leave those barbarians outside of our kingdom"
+
+ ME_Montferrat_Events.8.T: "Gemistus Pletho"
+ ME_Montferrat_Events.8.D: ""
+ ME_Montferrat_Events.8.OPT1: "We shall open the door to this knowledge man"
+ ME_Montferrat_Events.8.OPT2: "Go away before I will no longer hold my anger!"
+
+ ME_Montferrat_Events.9.T: "A difficult decision"
+ ME_Montferrat_Events.9.D.BYZ: "A messenger has arrived from the east, he carries along, from a distant place, he's on his way, he's bringing decay, in shades of grey we're doomed to face the night, light's out of sight. \nSince we've reached the point of no return, we pray for starlight, we wait for the moon, the sky is empty, alone in the unknown, we're getting nowhere. \nWe have been betrayed by the wind and the rain, the sacred halls empty and cold, the sacrifice made should not be done in vain, revenge will be taken by us, the through heirs of Rome."
+ ME_Montferrat_Events.9.D: "\"Byzantion is lost, everything is lost, the eastern eagle has fallen from the sky and Greece in ruins lie. \nThe enemy is within, everywhere, and with him the dark, soon they will be here. \nLet us hide, my lord, while there is time, there are places in the west.\" \n\n\"I had part in everything, twice I claimed the throne and twice I failed. \nI left ruin behind me when I escaped, but I also carried ruin with me. \nGreece, the mistress of her own lust.\""
+ ME_Montferrat_Events.9.OPT1: "Our Basileus is right, we are greek!"
+ ME_Montferrat_Events.9.OPT1.BYZ: "We are the true Palaiologos"
+ ME_Montferrat_Events.9.OPT2: "We have lost our heritage, we are italians!"
+
+ .T: ""
+ .D: ""
+ .OPT1: ""
+ .OPT2: ""
+
+ .T: ""
+ .D: ""
+ .OPT1: ""
+ .OPT2: ""
+
+ #Modifiers
+ #1st slot
+ mfa_sweet_moscato: "Sweet Grapes of Moscato"
+ #2nd slot
+ 
+ #3rd slot
+ mfa_for_victory_or_death: "For Victory or Death"
+ #4th slot
+ 
+ #5th slot
+ 
+ #Opinion Modifiers
+ mfa_helped_rebellion: "Helped the Rebellion"
+ mfa_helped_rebellion_war: "Helped the Rebellion war"
+ mfa_helped_rebellionAra: "Helped the Rebellion"
+ mfa_helped_rebellion_warAra: "Helped the Rebellion war"
+ mfa_denied_help: "Denied Help"
+
+ #Event Modifiers
+ mfa_greek_influx: "Greek Influx"
+ mfa_italian_knowledge: "Italian Knowledge"
+
+ #Decision
+
+ #Tooltip
+ MFA_CHOSEN_HERITAGE: "We have finally reached the internal stability and decided if we should follow the Greek heritage of our King, or the Latin heritage of our citizen"

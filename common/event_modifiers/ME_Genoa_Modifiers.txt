@@ -1,3 +1,13 @@
+#1
+
+#2
+
+#3
+gen_superba = {
+	local_development_cost = -0.10
+	trade_goods_size_modifier = 0.15
+}
+
 gen_arts = {
 	idea_cost = -0.1
 }

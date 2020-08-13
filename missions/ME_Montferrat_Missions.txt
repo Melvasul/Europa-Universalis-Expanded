@@ -1,0 +1,359 @@
+montferrat_missions_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MFA
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	mfa_moscato = {
+		icon = me_mission_wine
+		position = 2
+		required_missions = { mfa_resurgence }
+		provinces_to_highlight = {
+			trade_goods = wine
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 35
+				trade_goods = wine
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wine
+				}
+				add_base_production = 4
+				add_province_modifier = {
+					name = mfa_sweet_moscato
+					duration = -1
+				}
+				if = {
+					limit = {
+						NOT = { has_building = farm_estate }
+					}
+					add_building_construction = {
+						building = farm_estate
+						speed = 1.5
+						cost = 0
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	mfa_unitiy = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { 
+			mfa_rising_power
+		}
+		
+		trigger = {
+			
+		}
+		effect = {
+		}
+	}
+}
+
+montferrat_missions_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MFA
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	mfa_ligurian_shores = {
+		icon = mission_assemble_an_army
+		position = 2
+		required_missions = { mfa_resurgence }
+		provinces_to_highlight = {
+			OR = {
+				area = liguria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		}
+	}
+	
+	mfa_naval_preparation = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { 
+			mfa_ligurian_shores
+			mfa_rising_power
+		}
+		
+		trigger = {
+			
+		}
+		effect = {
+		}
+	}
+}
+
+montferrat_missions_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MFA
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	mfa_resurgence = {
+		icon = me_mission_italy_army1
+		position = 1
+		required_missions = { }
+		trigger = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				num_of_generals = 1
+				army_size_percentage = 1
+				manpower_size_percentage = 0.33
+				OR = {
+					if = {
+						limit = {
+							exists = FRA
+						}
+						FRA = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					if = {
+						limit = {
+							exists = MLO
+						}
+						MLO = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					any_country = {
+						is_rival = SAV
+						OR = {
+							NOT = { tag = FRA }
+							NOT = { tag = MLO }
+						}
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+					}
+				}
+			}
+			else = {
+				stability = 1
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				add_country_modifier = {
+					name = mfa_for_victory_or_death
+					duration = 7300
+				}
+				country_event = {
+					id = ME_Montferrat_Events.1
+				}
+			}
+			else = {
+			}
+		}
+	}
+	
+	mfa_rising_power = {
+		icon = mission_early_game_buildings
+		position = 3
+		required_missions = { 
+			mfa_ligurian_shores
+			mfa_resurgence
+			mfa_conquest_piedmont
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { unrest = 0.1 }
+		}
+		trigger = {
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { unrest = 0.1 }
+			}
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { unrest = 0.1 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = MFA_CHOSEN_HERITAGE
+				OR = {
+					has_country_flag = mfa_heritage_greek
+					has_country_flag = mfa_heritage_latin
+				}
+			}
+		}
+		effect = {
+		}
+	}
+	
+	mfa_only_war = {
+		icon = mission_trade_company_region_abroad
+		position = 5
+		required_missions = { 
+			mfa_rising_power
+			mfa_securing_mainland
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+}
+
+montferrat_missions_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MFA
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	mfa_conquest_piedmont = {
+		icon = mission_dominate_home_trade_node
+		position = 2
+		required_missions = { mfa_resurgence }
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		}
+	}
+	
+	mfa_securing_mainland = {
+		icon = mission_conquer_50_development
+		position = 4
+		required_missions = {
+			mfa_rising_power
+			mfa_conquest_piedmont
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+}
+
+montferrat_missions_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MFA
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	mfa_umanesimo = {
+		icon = mission_early_game_buildings
+		position = 1
+		trigger = {
+			treasury = 50
+			is_institution_enabled = renaissance
+			NOT = { has_institution = renaissance }
+		}
+		effect = {
+			add_treasury = -50
+			capital_scope = {
+				add_base_tax = 2
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					add_prosperity = 33
+				}
+			}
+			country_event = {
+				id = ME_Montferrat_Events.7
+			}
+		}
+	}
+	
+	mfa_rinascimento = {
+		icon = mission_early_game_buildings
+		position = 3
+		required_missions = {
+			mfa_conquest_piedmont
+			mfa_umanesimo
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = MFA_CHOSEN_HERITAGE
+				OR = {
+					has_country_flag = mfa_heritage_greek
+					has_country_flag = mfa_heritage_latin
+				}
+			}
+		}
+		effect = {
+		}
+	}
+	
+	mfa_development1 = {
+		icon = mission_early_game_buildings
+		position = 5
+		required_missions = { 
+			mfa_rising_power
+			mfa_rinascimento
+		}
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
