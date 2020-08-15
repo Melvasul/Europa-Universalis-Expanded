@@ -464,13 +464,21 @@ country_event = {
 			factor = 50
 		}
 
-		
+		add_country_modifier = {
+			name = tts_genio
+			duration = -1
+		}
 	}
 
 	option = {
 		name = ME_The_Two_Sicilies_Events.6.OPT2
 		ai_chance = {
 			factor = 50
+		}
+
+		add_country_modifier = {
+			name = tts_infantry
+			duration = -1
 		}
 		
 	}
@@ -479,6 +487,51 @@ country_event = {
 		name = ME_The_Two_Sicilies_Events.6.OPT3
 		ai_chance = {
 			factor = 50
+		}
+
+		add_country_modifier = {
+			name = tts_cavalry
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT4
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = tts_ruggero_knight
+			duration = -1
+		}
+
+		
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT5
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = tts_legions
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = ME_The_Two_Sicilies_Events.6.OPT6
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = tts_swiss
+			duration = -1
 		}
 		
 	}
