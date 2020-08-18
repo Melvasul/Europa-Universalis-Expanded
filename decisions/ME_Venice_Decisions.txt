@@ -1,0 +1,127 @@
+country_decisions = {
+	ven_domestic_timber = {
+		major = yes
+		potential = {
+			OR = {
+				tag = VEN
+				AND = {
+					tag = LVN
+					was_tag = VEN
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = naval_supplies
+		}
+		allow = {
+			OR = {
+				development_in_provinces = {
+					value = 30
+					trade_goods = naval_supplies
+				}
+				trading_bonus = {
+					trade_goods = naval_supplies
+					value = yes
+				}
+			}
+			any_owned_province = {
+				trade_goods = naval_supplies
+				has_building = shipyard
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ven_production_quality_timber
+				duration = 9125
+			}
+			country_event = {
+				id = ME_Venice_Events.2
+			}
+		}
+	}
+	ven_grain_production = {
+		major = yes
+		potential = {
+			OR = {
+				tag = VEN
+				AND = {
+					tag = LVN
+					was_tag = VEN
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = grain
+		}
+		allow = {
+			OR = {
+				development_in_provinces = {
+					value = 30
+					trade_goods = grain
+				}
+				trading_bonus = {
+					trade_goods = grain
+					value = yes
+				}
+			}
+		}
+		effect = {
+			112 = {
+				add_province_modifier = {
+					name = ven_steady_grain_supply
+					duration = -1
+				}
+			}
+			country_event = {
+				id = ME_Venice_Events.8
+			}
+		}
+	}
+	
+	ven_salt_monopoly = {
+		major = yes
+		potential = {
+			OR = {
+				tag = VEN
+				AND = {
+					tag = LVN
+					was_tag = VEN
+				}
+			}
+		}
+		provinces_to_highlight = {
+			trade_goods = salt
+		}
+		allow = {
+			OR = {
+				development_in_provinces = {
+					value = 50
+					trade_goods = salt
+				}
+				trading_bonus = {
+					trade_goods = salt
+					value = yes
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = ME_Venice_Events.7
+			}
+			custom_tooltip = VENICE_SALT_CONQUEST
+			hidden_effect = {
+				mediterrenean_region = {
+					type = all
+					every_neighbor_province = {
+						limit = {
+							trade_goods = salt
+							NOT = { is_permanent_claim = ROOT	}
+							NOT = { is_core = ROOT	}
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+}

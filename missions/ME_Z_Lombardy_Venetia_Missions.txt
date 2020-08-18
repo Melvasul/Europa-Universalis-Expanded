@@ -1,0 +1,162 @@
+lombardy_venetia_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = LVN
+		OR = {
+			was_tag = MLO
+			was_tag = VEN
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+}
+
+lombardy_venetia_missions_3_MLO = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MLO
+			AND = {
+				was_tag = MLO
+				tag = LVN
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+
+	LVN_united_crowns = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { }
+		position = 11
+		trigger = {
+			OR = {					
+				has_opinion = {
+					who = VEN
+					value = 150
+				}
+				VEN = {
+					num_of_owned_provinces_with = {
+						value = 0
+						region = italy_region
+					}
+				}
+			}
+		}
+		effect = {
+			VEN = {
+				country_event = {
+					id = ME_Lombardy_Venetia_Events.1
+				}
+			}
+		}
+	}
+}
+
+lombardy_venetia_missions_3_VEN = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = VEN
+			AND = {
+				was_tag = VEN
+				tag = LVN
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+
+	LVN_united_crowns = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { ven_stato_terra }
+		position = 11
+		trigger = {
+			OR = {					
+				has_opinion = {
+					who = VEN
+					value = 150
+				}
+				VEN = {
+					num_of_owned_provinces_with = {
+						value = 0
+						region = italy_region
+					}
+				}
+			}
+		}
+		effect = {
+			VEN = {
+				country_event = {
+					id = ME_Lombardy_Venetia_Events.1
+				}
+			}
+		}
+	}
+}
+
+lombardy_venetia_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = LVN
+		OR = {
+			was_tag = MLO
+			was_tag = VEN
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+}
+
+lombardy_venetia_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = LVN
+		OR = {
+			was_tag = MLO
+			was_tag = VEN
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+}

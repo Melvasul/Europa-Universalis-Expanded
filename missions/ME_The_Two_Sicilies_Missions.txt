@@ -332,7 +332,7 @@ the_two_sicilies_mission_3_SIC = {
 	}
 }
 
-the_two_sicilies_mission = {
+the_two_sicilies_mission_3 = {
 	slot = 3
 	generic = no
 	ai = yes

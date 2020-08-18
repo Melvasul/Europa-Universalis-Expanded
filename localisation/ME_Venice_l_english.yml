@@ -7,20 +7,12 @@
  ven_trading_east_desc: "We have a long history of trade with Cyprus and its rulers. While our current arrangements are acceptable, we cannot simply stand by and be content when more lucrative possibilities are within reach."
  ven_silk_port_title: "Silk Port"
  ven_silk_port_desc: "After the fall of Acri in 1291 the importance of Cyprus as the main exchange point between East and West has never been clear. \nThe entire wealth of the East will come in Antioch and seek a passage for the rich cities in the rest of Europe, shall we be able to size the port of Famagosta we may be able to seize the silk trade."
- ven_grain_production_title: "Bolster Grain Production"
- ven_grain_production_desc: "Keeping the citizens fed is a responsibility of the state, for the wealth and success of the state are dependent on the wellbeing of it's people."
- ven_salt_monopoly_title: "The Salt Monopoly"
- ven_salt_monopoly_desc: "No other state has gone to lengths as great as us in keeping a monopoly. What started as our ancestral trade-right in the briny lagoon of Venice has encompassed a tight grasp on Mediterranean salt trade. Genoa is beginning to make headway into undermining us, and that is simply unacceptable."
- ven_domestic_timber_title: "Domestic Timber Sources"
- ven_domestic_timber_desc: "Our reliance on foreign timber is a weakness to our very existence. Me must create or seize our own source of timber."
  ven_republican_army_title: "A Republican Army"
  ven_republican_army_desc: "In these savage times, it is deemed necessary to have our own army. Amidst the struggles against our Italian neighbors and the Turk, there is little leeway to be given when it comes to sustaining a standing army. It is what stands between us and total destruction."
  ven_house_of_visconti_title: "House of Visconti"
  ven_house_of_visconti_desc: "Despite the fact that both our people share ties of culture, both the house of Visconti and our [Root.Monarch.GetTitle] despise one another. March forth and rid the Peninsula from the scourge called Milan and their underlings!"
  ven_stato_terra_title: "Stato di Terra"
  ven_stato_terra_desc: "The incursion of the Republic into Mainland Italy has brought us furthered our success in the City. With new territory, we can extract great bounty from the fertile lands of Italy, feeding and growing our state ever further."
- ven_glory_san_marco_title: "Gloria a San Marco!"
- ven_glory_san_marco_desc: ""
  
  #2nd column
  ven_mare_hadriaticum_title: "Mare Hadriaticum"
@@ -79,8 +71,6 @@
  ven_consolidate_colonies_desc: "The apparent threat to our colonies grows ever bolder. It would be in our best interests to keep our colonies close to the vest."
  ven_last_roman_bastion_title: "Last Roman Bastion"
  ven_last_roman_bastion_desc: "What used to be great now lies in ruins. The famed Eastern Roman Empire, or as it was later known, Byzantium, is now nothing but a shell of its former self. It would be a sin to let it fall into Ottoman hands."
- ven_high_navy_title: "High Navy"
- ven_high_navy_desc: ""
  ven_red_shores_title: "The Red Shores"
  ven_red_shores_desc: ""
  ven_incense_peninsula_title: "Incense's Peninsula"
@@ -176,8 +166,6 @@
 
  # Modifiers:
  #1st column
- ven_steady_grain_supply: "Steady Grain Supplies"
- ven_production_quality_timber: "Production of Quality Timber"
  ven_all_world_against: "Tutto'l Mondo Contra"
  ven_house_of_visconti_modifier: "Victory over Milan"
  ven_san_marco: "San Marco"
@@ -235,6 +223,18 @@
  #Opinion Modifiers
  ven_mamluks_accept: "Easened Tensions"
  ven_mamluks_refuse: "Tightened Tensions"
+
+ #Decisions Modifier
+ ven_steady_grain_supply: "Steady Grain Supplies"
+ ven_production_quality_timber: "Production of Quality Timber"
+
+ #Decisions 
+ ven_grain_production_title: "Bolster Grain Production"
+ ven_grain_production_desc: "Keeping the citizens fed is a responsibility of the state, for the wealth and success of the state are dependent on the wellbeing of it's people."
+ ven_salt_monopoly_title: "The Salt Monopoly"
+ ven_salt_monopoly_desc: "No other state has gone to lengths as great as us in keeping a monopoly. What started as our ancestral trade-right in the briny lagoon of Venice has encompassed a tight grasp on Mediterranean salt trade. Genoa is beginning to make headway into undermining us, and that is simply unacceptable."
+ ven_domestic_timber_title: "Domestic Timber Sources"
+ ven_domestic_timber_desc: "Our reliance on foreign timber is a weakness to our very existence. Me must create or seize our own source of timber."
 
  #Tooltip
  VEN_GETS_MODIFIER_FOR_HOLDING_CONSTANTINOPLE: "[Root.GetName] gets '§YReclaimed Constantinople§!' until the ownership over §Y[151.GetName]§! is lost, giving the following effects: \nYearly Prestige: §G+1.00§! \nYearly Republican Tradition: §G+0.10§!"

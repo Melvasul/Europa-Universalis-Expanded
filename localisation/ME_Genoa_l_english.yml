@@ -5,28 +5,62 @@
  gen_mighty_fleet_desc: "In order to defend out traders' interests, we need a powerful seagoing navy, capable of taking on pirates and rivals alike."
  gen_theodoro_title: "Theodoran Coast"
  gen_theodoro_desc: "Theodoro, though not quite prevalant today, may become important due to its strategic postitioning along the Crimean Peninsula, and yet we let it slip through our grasp. We would do well to reconquer it."
- gen_tangiers_title: "Take Tangiers"
- gen_tangiers_desc: "The important trade city of Tangiers could be easily taken if we act quickly. Doing so would allow us a chance to control a major trade city without trifling with the dreadful Iberians."
-
- #2
+ gen_reign_in_crimea_title: "Reign in Crimea"
+ gen_reign_in_crimea_desc: "In the peninsula of Crimea, Caffa and other nearby towns in the hands of the Republic of Genoa were the point of contact between the Mongol-Tatar world and that of Western Europe. For over two centuries and until the complete Ottoman conquest of the Byzantine Empire, the Genoese colonies of the Black Sea prospered and enriched Genoa. \nThe Mongol conquerors of the Pontic–Caspian steppe were promoters of religious freedom, and the Genoese occupation of southern Crimea (1315+) saw rising degrees of Jewish settlement in the region. The Jewish community was divided among those who prayed according to the Sephardi, Ashkenazi and Romaniote rites. The different traditions were united into a distinctive Krymchak prayer book, which represented the Romaniote rite by Rabbi Moshe Ha-Golah, a Chief Rabbi of Kiev, who had settled in Crimea."
+ gen_river_don_title: "The River Don"
+ gen_river_don_desc: ""
  gen_westward_title: "Westward"
  gen_westward_desc: "We have a nice hold on eastern trade, now we just need to start asserting ourselves westward in Iberia and Northern Morocco to bring about a monetarily united Mediterranean."
+ gen_tangiers_title: "Take Tangiers"
+ gen_tangiers_desc: "The important trade city of Tangiers could be easily taken if we act quickly. Doing so would allow us a chance to control a major trade city without trifling with the dreadful Iberians."
+ gen_another_route_india_title: "Another Route for India"
+ gen_another_route_india_desc: "In the 15th century, some attempts at economic penetration were also attempted in Saharan Africa, such as the journey of Antonio Malfante who was sent to Tamantit by the Genoese economic elite in search of new markets. \nAfter this ruinous attempt to travel across the barren lands of Africa we may establish a sea route to reach the the cost of ivory and slave."
+ gen_port_panama_title: "Port of Panama"
+ gen_port_panama_desc: "Since the sixteenth century, the Genoese controlled the port of Panama, the first port on the Pacific founded by the conquest of the Americas; the Genoese obtained a concession to exploit the port mainly for the New World slave trade in the Pacific."
+
+ #2
+ gen_facing_doge_dominion_title: "Facing the Doge's Dominion"
+ gen_facing_doge_dominion_desc: ""
+ gen_conquest_venice_title: "Conquest of Venice"
+ gen_conquest_venice_desc: ""
+ gen_traders_steppes_title: "Traders of the Steppes"
+ gen_traders_steppes_desc: ""
+ gen_levant_trade_title: "The Levant Trade"
+ gen_levant_trade_desc: "After the fall of Acri in 1291 the importance of Cyprus as the main exchange point between East and West has never been clear. \nThe entire wealth of the East will come in Antioch and seek a passage for the rich cities in the rest of Europe, shall we be able to regain control over Limassol, our rightful territory since 1373 we may be able to destroy the grip of the vicious Doge on the trade of the Eastern Mediterranean and regaining full control on the enormous wealth travelling from Asia to Europe."
+ gen_wealth_orient_title: "Wealth of Orient"
+ gen_wealth_orient_desc: ""
  gen_gibraltar_title: "Greed in Gibraltar"
  gen_gibraltar_desc: "The crossing point between Africa and Iberia lays out of Castilian hands and in weaker Granadan hands... for now. We must act quickly before the Reconquista takes its toll and we lost the city forever."
+ gen_cape_good_hope_title: "Cape of Good Hope"
+ gen_cape_good_hope_desc: ""
+ gen_spice_venture_title: "Spice's Venture"
+ gen_spice_venture_desc: ""
+ gen_traders_asia_title: "Traders of Asia"
+ gen_traders_asia_desc: ""
 
  #3
  gen_la_superba_title: "La Superba"
  gen_la_superba_desc: "We come to Genoa, which you say you have never seen. You will see a royal city, leaning against an alpine hill, superb for men and for walls, whose appearance alone indicates the lady of the sea; its very power, as has already happened to many cities, harms them and causes them damage, because it offers material to the disputes and jealousies of the city."
+ gen_tyrrenean_wood_title: "Tyrrenean Wood"
+ gen_tyrrenean_wood_desc: ""
  gen_take_back_whats_ours_title: "Take Back What's Ours"
  gen_take_back_whats_ours_desc: "North Sardinia was ripped from our hands years ago by the Aragonese. When their moment of weakness arrives, we must be ready to strike and take back the island."
+ gen_italian_trade_title: "Italian Trade"
+ gen_italian_trade_desc: "The foreign policy of the Republic of Genoa, from the dawn of the year one thousand and along the slow running of the Middle Ages, up to the threshold of the modern era, was mainly that of guaranteeing citizens - outside the borders of Genoa and in projection of overseas territories - a dense network of merchant routes. \nIt was pursued by a consolidated ruling class, at the same time as pragmatic as it was aware of itself and its power. This policy was mainly based on the acquisition and control of new territories - which later became the so-called Genoese colonies - but also on the simple presence in the port cities located along the coasts of the Mediterranean Sea and outside it."
  gen_alexandria_title: "Ale in Alexandria"
  gen_alexandria_desc: "Alexandria is one of the last major trade cities in North Africa, allowing us to solidify our hold over the region and provide our merchants with a safe haven in the granary of the Mediterranean."
+ gen_trading_egypt_title: "Trading in Egypt"
+ gen_trading_egypt_desc: ""
+ gen_mare_nostrum_title: "Mare Nostrum"
+ gen_mare_nostrum_desc: "In Europe as in Africa or Asia, sometimes also with significant presences in the interior areas, in the fairs and in the most important financial centers of the world then frequented and frequented, sometimes going into unexplored or unknown lands, the Genoese laid the foundations of a economic and commercial empire, now with the weapons of diplomacy, now with the galleys of the Republic or its citizens. \nFrom Alexandria to Valencia, none dares challenge our Merchants. Our Republic has beaten the odds and has emerged victorious on all fronts. Glory to us! Long live our Republic!"
  gen_Niza_title: "Nice"
  gen_Niza_desc: "Our neighbors in Savoy do not acctively participate in trade as we do, and thus have no need for the por city of Niza. We should take if off of their hands for the benefit of both nations, solidifying our hold in Northern Italy and relieving them of the burdern of governance."
  gen_Piedmont_title: "Conquer Piedmont"
  gen_Piedmont_desc: "We have an open flank where Piedmont resides. We should probably do something about this before it comes back and bites us in the rear."
 
  #4
+ gen_anziani_ruling: "End the Anziani's Ruling"
+ gen_tyrrenean_islands: "Tyrrenean Islands"
  gen_tunis_title: "Trade Trouble in Tunis"
  gen_tunis_desc: "Tunis has been in the sights of Italy since Rome burned Carthage to the ground. And with good cause, for Tunis provides a unique opportunity for both African and Mediterranean commerce. The Tunisians had their chance to prove their value and they failed, now it is time to take matters into our own hands."
  gen_tripoli_title: "Take Tripoli"
@@ -53,6 +87,18 @@
  gen_Bosphorus_desc: "Now that the sound toll is securely controlled by us, we must provide security for our merchants by conquering nearby lands that may pose a threat to our trade. This will be no easy task, but our army is might and our ships are strong."
  
  # Modifiers:
+ #1
+ gen_genoese_naval_tactics: "Genoese Naval Tactics"
+ #2
+ gen_facing_doge: "Facing the Doge"
+ gen_victory_doge: "Victory over the Doge"
+
+ #3
+ gen_superba: "La Superba"
+ gen_tyrrenean_wood: "Tyrrenean Wood"
+ #4
+ gen_anziani_fall: "Anziani's fall"
+ #5
  gen_arts: "Tuscan Arts"
  gen_merchant_army: "Merchant Army"
  gen_trade_with_alps: "Lombardian Trade"
