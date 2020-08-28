@@ -2,6 +2,7 @@ country_decisions = {
 	ven_domestic_timber = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = ven_timber_flag }
 			OR = {
 				tag = VEN
 				AND = {
@@ -30,6 +31,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				set_country_flag = ven_timber_flag
+			}
 			add_country_modifier = {
 				name = ven_production_quality_timber
 				duration = 9125
@@ -42,6 +46,7 @@ country_decisions = {
 	ven_grain_production = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = ven_grain_flag }
 			OR = {
 				tag = VEN
 				AND = {
@@ -66,6 +71,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				set_country_flag = ven_grain_flag
+			}
 			112 = {
 				add_province_modifier = {
 					name = ven_steady_grain_supply
@@ -81,6 +89,7 @@ country_decisions = {
 	ven_salt_monopoly = {
 		major = yes
 		potential = {
+			NOT = { has_country_flag = ven_salt_flag }
 			OR = {
 				tag = VEN
 				AND = {
@@ -105,6 +114,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				set_country_flag = ven_salt_flag
+			}
 			country_event = {
 				id = ME_Venice_Events.7
 			}

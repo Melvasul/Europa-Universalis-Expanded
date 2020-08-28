@@ -110,10 +110,9 @@ lombardy_venetia_missions_3_VEN = {
 			}
 		}
 		effect = {
-			VEN = {
-				country_event = {
-					id = ME_Lombardy_Venetia_Events.1
-				}
+			add_country_modifier = {
+				name = lvn_lion_snake
+				duration = -1
 			}
 		}
 	}

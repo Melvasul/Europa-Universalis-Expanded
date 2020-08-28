@@ -7,7 +7,10 @@ naples_missions_1 = {
 			tag = NAP
 			AND = {
 				was_tag = NAP
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 			}
 		}
 		OR = {
@@ -246,7 +249,10 @@ naples_missions_2 = {
 			tag = NAP
 			AND = {
 				was_tag = NAP
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 			}
 		}
 		OR = {
@@ -620,7 +626,10 @@ naples_missions_3 = {
 			tag = NAP
 			AND = {
 				was_tag = NAP
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 			}
 		}
 		OR = {
@@ -1103,7 +1112,10 @@ naples_missions_4 = {
 			tag = NAP
 			AND = {
 				was_tag = NAP
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 			}
 		}
 		OR = {
@@ -1396,7 +1408,10 @@ naples_missions_5 = {
 			tag = NAP
 			AND = {
 				was_tag = NAP
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 			}
 		}
 		OR = {

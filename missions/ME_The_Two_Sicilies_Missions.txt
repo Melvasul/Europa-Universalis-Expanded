@@ -4,10 +4,18 @@ the_two_sicilies_mission_2 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = TTS
 		OR = {
-			was_tag = NAP
-			was_tag = SIC
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = NAP
+					was_tag = SIC
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+			}
 		}
 		OR = {
 			NOT = { has_dlc = "Emperor" }
@@ -19,7 +27,7 @@ the_two_sicilies_mission_2 = {
 	}
 
 	tts_real_esercito = {
-		icon = assemble_an_army
+		icon = mission_assemble_an_army
 		required_missions = {
 			tts_dream_ruggero
 		}
@@ -54,7 +62,10 @@ the_two_sicilies_mission_3_NAP = {
 		OR = {
 			tag = NAP
 			AND = {
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 				was_tag = NAP
 			}
 		}
@@ -67,7 +78,7 @@ the_two_sicilies_mission_3_NAP = {
 		}
 	}
 
-	tts_sicilian_union = {
+	tts_sicilian_union_nap = {
 		icon = unite_the_two_sicilies
 		required_missions = {
 			nap_provinces_africa
@@ -191,7 +202,10 @@ the_two_sicilies_mission_3_SIC = {
 		OR = {
 			tag = SIC
 			AND = {
-				tag = TTS
+				OR = {
+					tag = TTS
+					tag = ITA
+				}
 				was_tag = SIC
 			}
 		}
@@ -204,7 +218,7 @@ the_two_sicilies_mission_3_SIC = {
 		}
 	}
 
-	tts_sicilian_union = {
+	tts_sicilian_union_sic = {
 		icon = unite_the_two_sicilies
 		required_missions = {
 			sic_fall_of_aragon
@@ -338,10 +352,18 @@ the_two_sicilies_mission_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = TTS
 		OR = {
-			was_tag = NAP
-			was_tag = SIC
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = NAP
+					was_tag = SIC
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+			}
 		}
 		OR = {
 			NOT = { has_dlc = "Emperor" }
@@ -355,7 +377,6 @@ the_two_sicilies_mission_3 = {
 	tts_dream_ruggero = {
 		icon = king_of_sicily
 		required_missions = {
-			tts_sicilian_union
 		}
 		position = 11
 		provinces_to_highlight = {
@@ -449,10 +470,18 @@ the_two_sicilies_missions_4 = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = TTS
 		OR = {
-			was_tag = NAP
-			was_tag = SIC
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = NAP
+					was_tag = SIC
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+			}
 		}
 		OR = {
 			NOT = { has_dlc = "Emperor" }
@@ -464,7 +493,7 @@ the_two_sicilies_missions_4 = {
 	}
 
 	tts_real_marina = {
-		icon = assemble_an_army
+		icon = overshadow_venice
 		required_missions = {
 			tts_dream_ruggero
 		}

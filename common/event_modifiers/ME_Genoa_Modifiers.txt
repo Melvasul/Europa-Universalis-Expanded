@@ -26,6 +26,10 @@ gen_anziani_fall = {
 	local_autonomy = -0.25
 	local_tax_modifier = 0.25
 }
+gen_frank_roman_trade_aggreement = {
+	province_trade_power_value = +5
+}
+
 
 gen_arts = {
 	idea_cost = -0.1
@@ -40,7 +44,7 @@ gen_trade_with_alps = {
 gen_defensive_on_the_alps = {
 	defensiveness = 0.25
 }
-gen_italy_conquered = {
+gen_italian_trade_conquered = {
 	prestige = 1
 }
 gen_protecting_maghreb_trade = {

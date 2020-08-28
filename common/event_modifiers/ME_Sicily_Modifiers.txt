@@ -30,7 +30,6 @@ sic_transumanza = {
 sic_parramentu_sicilianu_modifier = {
 	local_unrest = -2
 	local_tax_modifier = 0.10
-	institution_growth = 5
 }
 sic_calabrian_oil = {
 	province_trade_power_modifier = 0.15
