@@ -561,7 +561,10 @@ country_event = {
 		add_dip_power = 25
 		add_mil_power = 25
 		if = {
-			limit = { tag = SIC }
+			limit = {
+				tag = SIC
+				overlord_of = NAP
+			}
 			hidden_effect = {
 				NAP = {
 					every_owned_province = {
@@ -580,7 +583,10 @@ country_event = {
 			inherit = NAP
 		}
 		else_if = {
-			limit = { tag = NAP	}
+			limit = {
+				tag = NAP
+				overlord_of = SIC
+			}
 			hidden_effect = {
 				SIC = {
 					every_owned_province = {

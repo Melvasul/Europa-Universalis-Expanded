@@ -730,6 +730,29 @@ genoa_missions_3 = {
 			add_accepted_culture = piedmontese
 		}
 	}
+
+	gen_conquest_of_rome = {
+		icon = sway_the_pope
+		required_missions = { gen_italian_trade }
+		position = 13
+		trigger = {
+			all_country = {
+				OR = {
+					AND = {
+						NOT = { culture_group = latin }
+						capital_scope = { region = italy_region }
+					}
+					army_strength = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+		effect = {
+			118 = { add_core = ROOT }
+		}
+	}
 }
 
 genoa_missions_4 = {

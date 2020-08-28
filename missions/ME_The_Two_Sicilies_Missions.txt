@@ -1,4 +1,4 @@
-the_two_sicilies_mission_2 = {
+the_two_sicilies_mission_2_NAP = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -9,12 +9,12 @@ the_two_sicilies_mission_2 = {
 				tag = TTS
 				OR = {
 					was_tag = NAP
-					was_tag = SIC
 				}
 			}
 			AND = {
 				tag = ITA
 				was_tag = TTS
+				was_tag = NAP
 			}
 		}
 		OR = {
@@ -26,12 +26,63 @@ the_two_sicilies_mission_2 = {
 		}
 	}
 
-	tts_real_esercito = {
+	tts_real_esercito_nap = {
 		icon = mission_assemble_an_army
-		required_missions = {
-			tts_dream_ruggero
+		required_missions = { tts_dream_ruggero_nap }
+		position = 11
+		trigger = {
+			121 = { base_manpower = 15 }
+			125 = {	base_manpower = 15 }
+			OR = {
+				has_mil_advisor_3 = yes
+				MIL = 6
+			}
 		}
-		position = 12
+		effect = {
+			country_event = {
+				id = ME_The_Two_Sicilies_Events.6
+			}
+			121 = {
+				add_permanent_province_modifier = {
+					name = tts_nunziatella
+				}
+			}
+		}
+	}
+}
+
+the_two_sicilies_mission_2_SIC = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = SIC
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+				was_tag = SIC
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+
+	tts_real_esercito_sic = {
+		icon = mission_assemble_an_army
+		required_missions = { tts_dream_ruggero_sic }
+		position = 11
 		trigger = {
 			121 = { base_manpower = 15 }
 			125 = {	base_manpower = 15 }
@@ -60,12 +111,15 @@ the_two_sicilies_mission_3_NAP = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = NAP
 			AND = {
+				tag = TTS
 				OR = {
-					tag = TTS
-					tag = ITA
+					was_tag = NAP
 				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
 				was_tag = NAP
 			}
 		}
@@ -78,307 +132,10 @@ the_two_sicilies_mission_3_NAP = {
 		}
 	}
 
-	tts_sicilian_union_nap = {
-		icon = unite_the_two_sicilies
-		required_missions = {
-			nap_provinces_africa
-			nap_ruling_trade
-			nap_conquest_constantinople
-		}
-		position = 9
-		provinces_to_highlight = {
-			OR = {
-				area = apulia_area
-				area = naples_area
-				area = calabria_area
-				area = western_sicily_area
-				area = sicily_area
-			}
-		}
-		trigger = {
-			prestige = 75
-			apulia_area = {
-				type = all
-				owned_by = ROOT
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					prosperity = 50
-				}
-				else = {
-					devastation = 0
-				}
-			}
-			naples_area = {
-				type = all
-				owned_by = ROOT
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					prosperity = 50
-				}
-				else = {
-					devastation = 0
-				}
-			}
-			calabria_area = {
-				type = all
-				owned_by = ROOT
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					prosperity = 50
-				}
-				else = {
-					devastation = 0
-				}
-			}
-			western_sicily_area = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						if = {
-							limit = {
-								has_dlc = "Mandate of Heaven"
-							}
-							prosperity = 50
-						}
-						else = {
-							devastation = 0
-						}
-					}
-					AND = {
-						owned_by = SIC
-						SIC = {
-							is_subject_of = ROOT
-						}
-						devastation = 0
-					}
-				}
-			}
-			sicily_area = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						if = {
-							limit = {
-								has_dlc = "Mandate of Heaven"
-							}
-							prosperity = 50
-						}
-						else = {
-							devastation = 0
-						}
-					}
-					AND = {
-						owned_by = SIC
-						SIC = {
-							is_subject_of = ROOT
-						}
-						devastation = 0
-					}
-				}
-			}
-		}
-		effect = {
-			country_event = {
-				id = ME_The_Two_Sicilies_Events.7
-			}
-		}
-	}
-}
-
-the_two_sicilies_mission_3_SIC = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		OR = {
-			tag = SIC
-			AND = {
-				OR = {
-					tag = TTS
-					tag = ITA
-				}
-				was_tag = SIC
-			}
-		}
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
-	}
-
-	tts_sicilian_union_sic = {
-		icon = unite_the_two_sicilies
-		required_missions = {
-			sic_fall_of_aragon
-			sic_controlling_strait
-			sic_conquest_tripoli
-			sic_cradle_knowledge
-			sic_city_500_domes
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = apulia_area
-				area = naples_area
-				area = calabria_area
-				area = western_sicily_area
-				area = sicily_area
-			}
-		}
-		position = 9
-		trigger = {
-			prestige = 75
-			apulia_area = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						if = {
-							limit = {
-								has_dlc = "Mandate of Heaven"
-							}
-							prosperity = 50
-						}
-						else = {
-							devastation = 0
-						}
-					}
-					AND = {
-						owned_by = NAP
-						NAP = {
-							is_subject_of = ROOT
-						}
-						devastation = 0
-					}
-				}
-			}
-			naples_area = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						if = {
-							limit = {
-								has_dlc = "Mandate of Heaven"
-							}
-							prosperity = 50
-						}
-						else = {
-							devastation = 0
-						}
-					}
-					AND = {
-						owned_by = NAP
-						NAP = {
-							is_subject_of = ROOT
-						}
-						devastation = 0
-					}
-				}
-			}
-			calabria_area = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						if = {
-							limit = {
-								has_dlc = "Mandate of Heaven"
-							}
-							prosperity = 50
-						}
-						else = {
-							devastation = 0
-						}
-					}
-					AND = {
-						owned_by = NAP
-						NAP = {
-							is_subject_of = ROOT
-						}
-						devastation = 0
-					}
-				}
-			}
-			western_sicily_area = {
-				type = all
-				owned_by = ROOT
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					prosperity = 50
-				}
-				else = {
-					devastation = 0
-				}
-			}
-			sicily_area = {
-				type = all
-				owned_by = ROOT
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					prosperity = 50
-				}
-				else = {
-					devastation = 0
-				}
-			}
-		}
-		effect = {
-			country_event = {
-				id = ME_The_Two_Sicilies_Events.7
-			}
-		}
-	}
-}
-
-the_two_sicilies_mission_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		OR = {
-			AND = {
-				tag = TTS
-				OR = {
-					was_tag = NAP
-					was_tag = SIC
-				}
-			}
-			AND = {
-				tag = ITA
-				was_tag = TTS
-			}
-		}
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			}
-		}
-	}
-
-	tts_dream_ruggero = {
+	tts_dream_ruggero_nap = {
 		icon = king_of_sicily
-		required_missions = {
-		}
-		position = 11
+		required_missions = { nap_sicilian_union }
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				area = apulia_area
@@ -462,10 +219,35 @@ the_two_sicilies_mission_3 = {
 			}
 		}
 	}
+
+	tts_conquest_of_rome_nap = {
+		icon = sway_the_pope
+		required_missions = {
+			tts_dream_ruggero_nap
+		}
+		position = 13
+		trigger = {
+			all_country = {
+				OR = {
+					AND = {
+						NOT = { culture_group = latin }
+						capital_scope = { region = italy_region }
+					}
+					army_strength = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+		effect = {
+			118 = { add_core = ROOT }
+		}
+	}
 }
 
-the_two_sicilies_missions_4 = {
-	slot = 4
+the_two_sicilies_mission_3_SIC = {
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -474,13 +256,13 @@ the_two_sicilies_missions_4 = {
 			AND = {
 				tag = TTS
 				OR = {
-					was_tag = NAP
 					was_tag = SIC
 				}
 			}
 			AND = {
 				tag = ITA
 				was_tag = TTS
+				was_tag = SIC
 			}
 		}
 		OR = {
@@ -492,12 +274,248 @@ the_two_sicilies_missions_4 = {
 		}
 	}
 
-	tts_real_marina = {
+	tts_dream_ruggero_sic = {
+		icon = king_of_sicily
+		required_missions = { sic_sicilian_union }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = apulia_area
+				area = calabria_area
+				area = western_sicily_area
+				area = sicily_area
+				area = naples_area
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		trigger = {
+			stability = 2
+			legitimacy_equivalent = 90
+			apulia_area = {
+				type = all
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+			calabria_area = {
+				type = all
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+			western_sicily_area = {
+				type = all
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+			sicily_area = {
+				type = all
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+			naples_area = {
+				type = all
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tts_norman_sicilia
+				duration = -1
+			}
+		}
+	}
+
+	tts_conquest_of_rome_sic = {
+		icon = sway_the_pope
+		required_missions = {
+			tts_dream_ruggero_sic
+		}
+		position = 13
+		trigger = {
+			all_country = {
+				OR = {
+					AND = {
+						NOT = { culture_group = latin }
+						capital_scope = { region = italy_region }
+					}
+					army_strength = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+		effect = {
+			118 = { add_core = ROOT }
+		}
+	}
+}
+
+the_two_sicilies_missions_4_NAP = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = NAP
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+				was_tag = NAP
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+
+	tts_real_marina_nap = {
+		icon = overshadow_venice
+		required_missions = { tts_dream_ruggero_nap }
+		position = 11
+		trigger = {
+			navy_size_percentage = 1
+			any_country = {
+				341 = {
+					trade_share = {
+						share = 1
+						country = PREV
+					}
+				}
+				NOT = { navy_size = ROOT }
+			}
+			any_country = {
+				1298 = {
+					trade_share = {
+						share = 1
+						country = PREV
+					}
+				}
+				NOT = { navy_size = ROOT }
+			}
+			any_country = {
+				1308 = {
+					trade_share = {
+						share = 1
+						country = PREV
+					}
+				}
+				NOT = { navy_size = ROOT }
+			}
+			any_country = {
+				1320 = {
+					trade_share = {
+						share = 1
+						country = PREV
+					}
+				}
+				NOT = { navy_size = ROOT }
+			}
+			any_country = {
+				358 = {
+					trade_share = {
+						share = 1
+						country = PREV
+					}
+				}
+				NOT = { navy_size = ROOT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tts_marine_infrantry_corps
+				duration = -1
+			}
+			125 = {
+				add_permanent_province_modifier = {
+					name = tts_real_marina
+				}
+			}
+		}
+	}
+}
+
+the_two_sicilies_missions_4_SIC = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			AND = {
+				tag = TTS
+				OR = {
+					was_tag = SIC
+				}
+			}
+			AND = {
+				tag = ITA
+				was_tag = TTS
+				was_tag = SIC
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+
+	tts_real_marina_sic = {
 		icon = overshadow_venice
 		required_missions = {
-			tts_dream_ruggero
+			tts_dream_ruggero_sic
 		}
-		position = 12
+		position = 11
 		trigger = {
 			navy_size_percentage = 1
 			any_country = {

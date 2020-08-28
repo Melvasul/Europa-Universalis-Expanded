@@ -746,6 +746,183 @@ sicily_mission_3 = {
 			}
 		}
 	}
+
+	sic_sicilian_union = {
+		icon = unite_the_two_sicilies
+		required_missions = {
+			sic_fall_of_aragon
+			sic_controlling_strait
+			sic_conquest_tripoli
+			sic_cradle_knowledge
+			sic_city_500_domes
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = apulia_area
+				area = naples_area
+				area = calabria_area
+				area = western_sicily_area
+				area = sicily_area
+			}
+		}
+		position = 9
+		trigger = {
+			prestige = 75
+			apulia_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						if = {
+							limit = {
+								has_dlc = "Mandate of Heaven"
+							}
+							prosperity = 50
+						}
+						else = {
+							devastation = 0
+						}
+					}
+					AND = {
+						owned_by = NAP
+						NAP = {
+							is_subject_of = ROOT
+						}
+						devastation = 0
+					}
+				}
+			}
+			naples_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						if = {
+							limit = {
+								has_dlc = "Mandate of Heaven"
+							}
+							prosperity = 50
+						}
+						else = {
+							devastation = 0
+						}
+					}
+					AND = {
+						owned_by = NAP
+						NAP = {
+							is_subject_of = ROOT
+						}
+						devastation = 0
+					}
+				}
+			}
+			calabria_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						if = {
+							limit = {
+								has_dlc = "Mandate of Heaven"
+							}
+							prosperity = 50
+						}
+						else = {
+							devastation = 0
+						}
+					}
+					AND = {
+						owned_by = NAP
+						NAP = {
+							is_subject_of = ROOT
+						}
+						devastation = 0
+					}
+				}
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+			sicily_area = {
+				type = all
+				owned_by = ROOT
+				if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					prosperity = 50
+				}
+				else = {
+					devastation = 0
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = ME_The_Two_Sicilies_Events.7
+			}
+		}
+	}
+}
+
+#In case Sicily wants to form Italy without TTS
+sicily_missions_3_SIC = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SIC
+			AND = {
+				tag = ITA
+				was_tag = SIC
+				NOT = { was_tag = TTS }
+			}
+		}
+		OR = {
+			NOT = { has_dlc = "Emperor" }
+			AND = {
+				has_dlc = "Emperor"
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+	}
+	has_country_shield = yes
+
+	sicily_conquest_of_rome = {
+		icon = sway_the_pope
+		required_missions = {
+			sic_sicilian_union
+		}
+		position = 13
+		trigger = {
+			all_country = {
+				OR = {
+					AND = {
+						NOT = { culture_group = latin }
+						capital_scope = { region = italy_region }
+					}
+					army_strength = {
+						who = ROOT
+						value = 1
+					}
+				}
+			}
+		}
+		effect = {
+			118 = { add_core = ROOT }
+		}
+	}
 }
 
 sicily_mission_4 = {
