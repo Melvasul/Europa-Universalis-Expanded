@@ -1338,7 +1338,7 @@ naples_missions_4 = {
 			}
 		}
 		effect = {
-			country_event = { id = ME_The_Two_Sicilies_Events.8 }
+			country_event = { id = ME_Naples_Events.13 }
 			thrace_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
