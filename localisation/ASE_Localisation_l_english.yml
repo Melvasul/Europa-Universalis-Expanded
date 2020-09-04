@@ -74,3 +74,13 @@
  age_splendor_expanded_events.1.T: "This is a hidden event"
  age_splendor_expanded_events.1.D: "Its sole purpose is to tell the other expanded mod that this mod is active as well, but you should not be able to see this. \nRefere to Melvasul in the Expanded discord, if you see this."
  age_splendor_expanded_events.1.OPT1: "Melvasul, Expanded Discord"
+
+ Ages_Splendor_Expanded_Events.1.T: "A Splendor Court"
+ Ages_Splendor_Expanded_Events.1.D: "Our court has been renown in the whole world, countless kingdoms have looked upon the glory of ours contemplating without understanding how splendour it could be. \nThrough our attempts and sacrifices we have been able to reflect this beauty radiating on our lands."
+ Ages_Splendor_Expanded_Events.1.OPT1: "Our country will see peace once again"
+ Ages_Splendor_Expanded_Events.1.OPT2: "We will radiate the glory, honour and status"
+ Ages_Splendor_Expanded_Events.1.OPT3: "Our ruler has never felt more loved"
+ Ages_Splendor_Expanded_Events.1.OPT4: "Our provinces will benefit from it"
+
+ ase_splendor_decision_title: "Invest the Court Splendor"
+ ase_splendor_decision_decision: "Through hard work we have been able to create enough splendour to let the whole world see us."

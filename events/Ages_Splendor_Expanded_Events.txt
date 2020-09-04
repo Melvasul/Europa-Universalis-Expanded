@@ -1,0 +1,99 @@
+namespace = Ages_Splendor_Expanded_Events
+
+country_event = {
+	id = Ages_Splendor_Expanded_Events.1
+	title = Ages_Splendor_Expanded_Events.1.T
+	desc = Ages_Splendor_Expanded_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = Ages_Splendor_Expanded_Events.1.OPT1
+
+		trigger = {
+			hidden_trigger = {
+				NOT = { stability = 3 }
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+
+		add_splendor = -200		
+		add_stability = 1
+	}
+
+	option = {
+		name = Ages_Splendor_Expanded_Events.1.OPT2
+
+		trigger = {
+			hidden_trigger = {
+				NOT = { prestige = 90 }
+			}
+		}
+
+		add_splendor = -100
+		ai_chance = {
+			factor = 20
+		}
+
+		add_prestige = 5
+	}
+
+	option = {
+		name = Ages_Splendor_Expanded_Events.1.OPT3
+
+		trigger = {
+			hidden_trigger = {
+				NOT = { legitimacy_equivalent = 90 }
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+
+		add_splendor = -100
+		if = {
+			limit = {
+				government = republic
+			}
+			add_republican_tradition = 3
+		}
+		else = {
+			add_legitimacy_equivalent = {
+				amount = 10
+			}
+		}
+	}
+
+	option = {
+		name = Ages_Splendor_Expanded_Events.1.OPT4
+
+		trigger = {
+			hidden_trigger = {
+				has_dlc = "Mandate of Heaven"
+				num_of_owned_provinces_with = {
+					value = 1
+					is_state = yes
+					NOT = { prosperity = 90 }
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+
+		add_splendor = -100
+		random_owned_province = {
+			limit = {
+				NOT = { prosperity = 90 }
+				is_state = yes
+			}
+			add_prosperity = 10
+		}
+	}
+}

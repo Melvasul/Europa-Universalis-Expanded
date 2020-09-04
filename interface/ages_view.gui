@@ -14,7 +14,7 @@ guiTypes = {
 		iconType = {
 			name ="picture"
 			spriteType = "GFX_event_event_test"
-			position = { x = 108 y = -5 }
+			position = { x = 172 y = -5 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
@@ -26,7 +26,7 @@ guiTypes = {
 		
 		WindowType = {
 			name = "age_of_discovery"
-			position = { x = 85 y = -29}
+			position = { x = 148 y = -29}
 			upsound = age_of_discovery
 
 			iconType = {
@@ -62,7 +62,7 @@ guiTypes = {
 		
 		WindowType = {
 			name = "age_of_reformation"
-			position = { x = 85 y = -29}
+			position = { x = 148 y = -29}
 			upsound = age_of_reformation
 
 			iconType = {
@@ -97,7 +97,7 @@ guiTypes = {
 		
 		WindowType = {
 			name = "age_of_absolutism"
-			position = { x = 85 y = -29}
+			position = { x = 148 y = -29}
 			upsound = age_of_absolutism
 
 			iconType = {
@@ -131,7 +131,7 @@ guiTypes = {
 		
 		WindowType = {
 			name = "age_of_revolutions"
-			position = { x = 85 y = -29}
+			position = { x = 148 y = -29}
 			upsound = age_of_revolutions
 
 			iconType = {
@@ -164,7 +164,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 136 y = -27 }
+			position = { x = 186 y = -27 }
 			font = "vic_29s"
 			borderSize = {x = 0 y = 0}
 			text = ""
@@ -176,21 +176,21 @@ guiTypes = {
 		iconType = {
 			name ="icon_absolutism"
 			spriteType = "GFX_icon_absolutism"
-			position = { x = 109 y = 202 }
+			position = { x = 186 y = 195 }
 		}
 		iconType = {
 			name ="icon_religious"
 			spriteType = "GFX_icon_religious"
-			position = { x = 72 y = 202 }
+			position = { x = 150 y = 195 }
 		}
 		iconType = {
 			name ="splendor_icon"
 			spriteType = "GFX_icon_splendor_tiny"
-			position = { x = 72 y = 174 }
+			position = { x = 150 y = 165 }
 		}
 		instantTextBoxType = {
 			name = "splendor"
-			position = { x = 90 y =174 }
+			position = { x = 165 y = 165 }
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
 			text = ""
@@ -201,25 +201,25 @@ guiTypes = {
 		guiButtonType = {
 			name = "golden_age"
 			quadTextureSprite ="GFX_age_golden_age_button"
-			position = { x = 198 y = 140 }
+			position = { x = 278 y = 140 }
 			buttonText = "START_GOLDEN_AGE"
 			buttonFont = "vic_18"
 		}
 		iconType = {
 			name = "in_golden_age_banner"
 			spriteType = "GFX_golden_age_banner"
-			position = { x = 124 y = 130 }
+			position = { x = 215 y = 130 }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "after_golden_age_banner"
 			spriteType = "GFX_golden_age_banner_tattered"
-			position = { x = 124 y = 130 }
+			position = { x = 215 y = 130 }
 			alwaystransparent = yes 
 		}
 		instantTextBoxType = {
 			name = "in_or_after_golden_age_text"
-			position = { x = 174 y =134 }
+			position = { x = 254 y =134 }
 			font = "vic_22s"
 			borderSize = {x = 4 y = 4}
 			text = ""
@@ -229,7 +229,7 @@ guiTypes = {
 		}			
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = 150 y = 175 }
+			position = { x = 225 y = 175 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
@@ -241,14 +241,14 @@ guiTypes = {
 			name ="close_button"
 			if_resolution = {
 				max_height = 867
-				position = { x = 585 y = -48 }
+				position = { x = 640 y = -48 }
 				quadTextureSprite = "GFX_button_close"
 				buttonText = ""
 			}	
 			if_resolution = {
 				min_height = 868
 				quadTextureSprite ="button_type_1"
-				position = { x = 239 y = 664 }
+				position = { x = 295 y = 664 }
 				buttonText = "CLOSE"
 			}			
 			buttonFont = "vic_18"
@@ -257,9 +257,9 @@ guiTypes = {
 		
 		listboxType = {
 			name ="objectives"
-			position = { x = 60 y = 225 }
+			position = { x = 138 y = 225 }
 			backGround=""
-			size = { x = 560 y = 450}
+			size = { x = 570 y = 440}
 			Orientation = "UPPER_LEFT"
 			spacing = 2
 			scrollbartype = "standardlistbox_slider"
@@ -267,9 +267,9 @@ guiTypes = {
 		}
 		listboxType = {
 			name ="abilities"
-			position = { x = 0 y = 11 }
+			position = { x = 5 y = 17 }
 			backGround=""
-			size = { x = 50 y = 675 }
+			size = { x = 70 y = 660 }
 			Orientation = "UPPER_LEFT"
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"

@@ -419,7 +419,20 @@ age_of_reformation = {
 			}
 		}
 		obj_colonial_empire = {
-			colony = 5
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = subjects }
+				}
+				calc_true_if = {
+					amount = 5
+					all_subject_country	= {
+						is_colonial_nation = yes
+					}
+				}
+			}
+			else = {
+				colony = 5
+			}
 		}
 		obj_force_converted = {
 			custom_trigger_tooltip = {
