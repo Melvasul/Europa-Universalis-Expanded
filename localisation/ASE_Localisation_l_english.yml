@@ -77,10 +77,29 @@
 
  Ages_Splendor_Expanded_Events.1.T: "A Splendor Court"
  Ages_Splendor_Expanded_Events.1.D: "Our court has been renown in the whole world, countless kingdoms have looked upon the glory of ours contemplating without understanding how splendour it could be. \nThrough our attempts and sacrifices we have been able to reflect this beauty radiating on our lands."
- Ages_Splendor_Expanded_Events.1.OPT1: "Our country will see peace once again"
+ Ages_Splendor_Expanded_Events.1.OPT1: "Ah, nevermind"
  Ages_Splendor_Expanded_Events.1.OPT2: "We will radiate the glory, honour and status"
  Ages_Splendor_Expanded_Events.1.OPT3: "Our ruler has never felt more loved"
  Ages_Splendor_Expanded_Events.1.OPT4: "Our provinces will benefit from it"
+ Ages_Splendor_Expanded_Events.1.OPT5: "He will help us administrate our realm"
+ Ages_Splendor_Expanded_Events.1.OPT6: "His diplomatic skill will be of help"
+ Ages_Splendor_Expanded_Events.1.OPT7: "His knowledge will improve our military"
+ Ages_Splendor_Expanded_Events.1.OPT8: "Our country will see peace once again"
 
  ase_splendor_decision_title: "Invest the Court Splendor"
  ase_splendor_decision_decision: "Through hard work we have been able to create enough splendour to let the whole world see us."
+ ase_splendor_decision_ai_title: "Invest the Court Splendor"
+ ase_splendor_decision_ai_decision: "Through hard work we have been able to create enough splendour to let the whole world see us."
+
+ #Tooltips:
+ ase_splendor_decision_tooltip: "Our investment may require some days before gathering all informations."
+ ase_adm_advisor_1: "A random lvl 1 Administrative advisor of our culture will be available"
+ ase_adm_advisor_2: "A random lvl 2 Administrative advisor of our culture will be available"
+ ase_adm_advisor_3: "A random lvl 3 Administrative advisor of our culture will be available"
+ ase_dip_advisor_1: "A random lvl 1 Diplomatic advisor of our culture will be available"
+ ase_dip_advisor_2: "A random lvl 2 Diplomatic advisor of our culture will be available"
+ ase_dip_advisor_3: "A random lvl 3 Diplomatic advisor of our culture will be available"
+ ase_mil_advisor_1: "A random lvl 1 Military advisor of our culture will be available"
+ ase_mil_advisor_2: "A random lvl 2 Military advisor of our culture will be available"
+ ase_mil_advisor_3: "A random lvl 3 Military advisor of our culture will be available"
+ 
