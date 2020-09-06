@@ -2,14 +2,7 @@ country_decisions = {
 	italian_nations_king_rome = {
 		major = yes
 		potential = {
-			owns = 118
-			culture_group = latin
-			NOT = {
-				tag = PAP
-			}
-			NOT = {
-				has_country_flag = king_rome_decision_completed
-			}
+			always = no
 		}
 		allow = {
 			NOT = {
@@ -28,7 +21,7 @@ country_decisions = {
 			add_prestige = 25
 			hidden_effect = {
 				country_event = {
-					id = ME_Italian_Nations_Events.1
+					id = ME_Italian_Nations_Events.1000
 				}
 			}
 			if = {
@@ -37,7 +30,7 @@ country_decisions = {
 				}
 				HAB = {
 					country_event = {
-						id = ME_Italian_Nations_Events.2
+						id = ME_Italian_Nations_Events.2000
 						days = 60
 					}
 				}
@@ -48,7 +41,7 @@ country_decisions = {
 				}
 				FRA = {
 					country_event = {
-						id = ME_Italian_Nations_Events.2
+						id = ME_Italian_Nations_Events.2000
 						days = 60
 					}
 				}
@@ -59,7 +52,7 @@ country_decisions = {
 				}
 				SPA = {
 					country_event = {
-						id = ME_Italian_Nations_Events.2
+						id = ME_Italian_Nations_Events.2000
 						days = 60
 					}
 				}
@@ -70,7 +63,7 @@ country_decisions = {
 				}
 				PAP = {
 					country_event = {
-						id = ME_Italian_Nations_Events.2
+						id = ME_Italian_Nations_Events.2000
 						days = 60
 					}
 				}
@@ -87,7 +80,7 @@ country_decisions = {
 					}
 				}
 				country_event = {
-					id = ME_Italian_Nations_Events.2
+					id = ME_Italian_Nations_Events.2000
 					days = 30
 				}
 			}			

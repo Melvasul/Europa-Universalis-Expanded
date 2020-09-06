@@ -351,6 +351,8 @@ country_event = {
 	desc = ME_Italian_Nations_Events.9.D
 	
 	major = yes
+
+	is_triggered_only = yes
 	
 	trigger = {
 		OR = {
