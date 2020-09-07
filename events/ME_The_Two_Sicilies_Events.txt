@@ -562,7 +562,6 @@ country_event = {
 		add_mil_power = 25
 		if = {
 			limit = {
-				tag = SIC
 				overlord_of = NAP
 			}
 			hidden_effect = {
@@ -584,7 +583,6 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				tag = NAP
 				overlord_of = SIC
 			}
 			hidden_effect = {

@@ -1,4 +1,13 @@
+#1
+tts_transumanza = {
+	local_production_efficiency = 0.10
+	local_tax_modifier = 0.10
+}
+
 #2
+tts_army_preparation = {
+	land_maintenance_modifier = -0.15
+}
 tts_nunziatella = {
 	local_manpower_modifier = 0.25
 	local_regiment_cost = -0.25
@@ -11,12 +20,20 @@ tts_norman_sicilia = {
 }
 
 #4
+tts_naval_preparation = {
+	naval_maintenance_modifier = -0.15
+}
 tts_marine_infrantry_corps = {
 	allowed_marine_fraction = 0.15
 }
 tts_real_marina = {
 	local_sailors_modifier = 0.25
 	blockade_force_required = 0.25
+}
+
+#5
+tts_tonnara_siciliana = {
+	local_tax_modifier = 0.10
 }
 
 #Decisions

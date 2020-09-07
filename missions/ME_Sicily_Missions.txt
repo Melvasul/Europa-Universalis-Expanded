@@ -899,7 +899,7 @@ sicily_missions_3_SIC = {
 	}
 	has_country_shield = yes
 
-	sicily_conquest_of_rome = {
+	sic_conquest_of_rome = {
 		icon = sway_the_pope
 		required_missions = {
 			sic_sicilian_union
@@ -910,11 +910,17 @@ sicily_missions_3_SIC = {
 				OR = {
 					AND = {
 						NOT = { culture_group = latin }
-						capital_scope = { region = italy_region }
+						NOT = {
+							capital_scope = {
+								region = italy_region
+							}
+						}
 					}
-					army_strength = {
-						who = ROOT
-						value = 1
+					NOT = {
+						army_strength = {
+							who = ROOT
+							value = 1
+						}
 					}
 				}
 			}
@@ -1021,7 +1027,7 @@ sicily_mission_4 = {
 		effect = {
 			apulia_area = {
 				add_province_modifier = {
-					name = sic_transumanza
+					name = tts_transumanza
 					duration = -1
 				}
 			}

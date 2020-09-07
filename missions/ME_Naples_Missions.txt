@@ -66,7 +66,7 @@ naples_missions_1 = {
 	nap_papal_relations = {
 		icon = defender_of_the_faith
 		required_missions = { 
-			nap_freedom
+			nap_gain_independence
 			nap_curia_controller
 		}
 		position = 4
@@ -314,7 +314,7 @@ naples_missions_2 = {
 
 	nap_republic_amalfi = {
 		icon = develop_naples
-		required_missions = { nap_freedom }
+		required_missions = { nap_gain_independence }
 		provinces_to_highlight = {
 			province_id = 2983
 			OR = {
@@ -756,7 +756,7 @@ naples_missions_3 = {
 		}
 	}
 
-	nap_freedom = {
+	nap_gain_independence = {
 		icon = union_with_naples
 		required_missions = { }
 		position = 3
@@ -814,7 +814,7 @@ naples_missions_3 = {
 
 	nap_trinacria = {
 		icon = unite_the_two_sicilies
-		required_missions = { nap_freedom }
+		required_missions = { nap_gain_independence }
 		provinces_to_highlight = {
 			OR = {
 				area = sicily_area
@@ -1241,7 +1241,7 @@ naples_missions_3_NAP = {
 	}
 	has_country_shield = yes
 
-	naples_conquest_of_rome = {
+	nap_conquest_of_rome = {
 		icon = sway_the_pope
 		required_missions = {
 			nap_sicilian_union
@@ -1252,11 +1252,17 @@ naples_missions_3_NAP = {
 				OR = {
 					AND = {
 						NOT = { culture_group = latin }
-						capital_scope = { region = italy_region }
+						NOT = {
+							capital_scope = {
+								region = italy_region
+							}
+						}
 					}
-					army_strength = {
-						who = ROOT
-						value = 1
+					NOT = {
+						army_strength = {
+							who = ROOT
+							value = 1
+						}
 					}
 				}
 			}
@@ -1349,7 +1355,7 @@ naples_missions_4 = {
 
 	nap_traversing_adriatic = {
 		icon = cross_the_pindus
-		required_missions = { nap_freedom }
+		required_missions = { nap_gain_independence }
 		position = 4
 		trigger = {
 			manpower_percentage = 1
@@ -1611,7 +1617,7 @@ naples_missions_5 = {
 	nap_university = {
 		icon = me_mission_italy_university_nap
 		required_missions = { 
-			nap_freedom
+			nap_gain_independence
 			nap_renaissance
 		}
 		provinces_to_highlight = {
@@ -1639,9 +1645,9 @@ naples_missions_5 = {
 				}
 				add_treasury = -100
 			}
-			add_prestige = 25
+			add_prestige = 10
 			add_country_modifier = {
-				name = nap_university_modifier
+				name = nap_federico_II
 				duration = -1
 			}
 			121 = {

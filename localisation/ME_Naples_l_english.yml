@@ -26,8 +26,8 @@
  nap_sicilian_kingship_desc: "Annus Domini 1059, Pope Nicholas II crowned our beloved king Robertus Guiscardus dux Siciliae and thus our heritage was created, when we first united the crown of Sicily and the crown of Apulia et Calabria. \nMany years have passed since then and many foreigners have destroyed and broken the union, and today our kingdom refers to only the Sicily before the strait of Messina: Regnum Siciliae Citra Pharum. \nA strong duty lies ahead, reuniting the two crowns, and declare as the new successors and Rex Utriusque Siciliae."
  nap_provence_title: "The County of Provence"
  nap_provence_desc: "The county of Provence is the home of our King, we should look into enstabilishing better tides with the King of the Provence attempting to restore the Union that our people had once again."
- nap_freedom_title: "Gain Independence"
- nap_freedom_desc: "The years under foreign dominations must end, now, we are a proud people and for centuries we have been under foreign rules from the Arabs, the Normans, the French, the Germans, we won't stand under the Spaniard now. We must seek to assemble the mighty army we can, guided by the finest man. We may ask help from other nations in our fight for the independency."
+ nap_gain_independence_title: "Gain Independence"
+ nap_gain_independence_desc: "The years under foreign dominations must end, now, we are a proud people and for centuries we have been under foreign rules from the Arabs, the Normans, the French, the Germans, we won't stand under the Spaniard now. We must seek to assemble the mighty army we can, guided by the finest man. We may ask help from other nations in our fight for the independency."
  nap_trinacria_title: "Trinacria"
  nap_trinacria_desc: "The Island is extraordinary sedimentation of beauty. A mixture of peoples and cultures. An uninterrupted, millennial take and give. A mutual enrichment of winners and losers. Take Palermo, a city where the concept of crisis, in a philosophical key, that is, a perpetual motion of changes makes us understand the meaning of history. The alternative to the condition of crisis is immobility, therefore nothing. There is probably no city in the world that offers this contamination of cultures, from classical Greek to Romanesque, from Arabic to Norman. And so much more."
  nap_foothold_levant_title: "Entering the Levant"
@@ -40,6 +40,8 @@
  nap_ruling_trade_desc: ""
  nap_sicilian_union_title: "Sicilian Union"
  nap_sicilian_union_desc: "Pope Clement IV, who invested, and crowned Charles of Anjou of these two Kingdoms, called this Island, and the Kingdom of Naples with a single name, as can be seen in that Bubble, where he says, Charles of Anjou King of the two Sicilies, Citra, and Ultra the Lighthouse: and this also observed the other Pontiffs, who succeeded that, and made use of the same names. For what 7 other kings, who succeeded the said Charles ... who only of the Kingdom of Naples, and not of Sicily were masters, called the Kingdom of Naples, Sicily from here from the Lighthouse. King Alfonso then, finding himself King of the Island of Sicily, for having succeeded his father Ferrante, and having also with great effort, and strength of arms gained the Kingdom of Naples by Renato's hand, was also called with one voice, King of the Two Sicilies, Citra, and Ultra; And this is to demonstrate not to contraven the authority of the Popes. 4 other kings succeeded Alfonso ... who were lords only of the Kingdom of Naples, and were named, like the others, King of Sicily Citra. But Ferdinand the Catholic, Giovanna his daughter, Charles V imperadore and Philip our king, and Lord, who year (sic) had the dominion of both kingdoms, were titled, and called King of the two Sicilies Citra, and Ultra: the truth therefore is, that these names came from the Roman Pontiffs, (as has been said) who began to introduce, that the Kingdom of Naples was called Sicily."
+ nap_conquest_of_rome_title: "Conquest of Rome"
+ nap_conquest_of_rome_desc: "Founded according to tradition on April 21, 753 BC (although recent excavations in Lapis niger would date the foundation back to 2 centuries earlier), during its three millennia of history it was the first metropolis of humanity, the beating heart of one of the most important ancient civilizations, which influenced society, the culture, language, literature, art, architecture, philosophy, religion, law and customs of the following centuries. Place of origin of the Latin language, it was the capital of the Roman Empire which extended its dominion over the whole Mediterranean basin and most of Europe, the Papal States, subjected to the temporal power of the popes and the future Kingdom of Italy. By definition, Rome, Caput Mundi and Eternal City are defined. Its historic center, delimited by the perimeter of the Aurelian walls, overlapping of testimonies of almost three millennia, is an expression of the historical, artistic and cultural heritage of the western European world."
 
  #4th column
  nap_magyar_union_title: "Magyar Union"
@@ -167,7 +169,7 @@
  nap_champion_christianity: "Champions of Christianity"
  #5th column
  nap_sicilian_school: "Scuola Siciliana"
- nap_university_modifier: "Federico II"
+ nap_federico_II: "Federico II"
  nap_lighthouse_otranto: "Lighthouse of Otranto"
 
  #Opinion modifier

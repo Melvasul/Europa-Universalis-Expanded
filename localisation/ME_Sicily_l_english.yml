@@ -33,6 +33,8 @@
  sic_conquest_tripoli_desc: "It was 1142 when for the first time Roger II attacked Tripoli, located further south down the coast from Mahdia, he besieged and took it but the city had already been depleted by a series of famines and was practically in a state of civil war when Roger's troops assaulted it. It was still an important port on the sea route from the Maghreb to Egypt. Several of the minor emirs in the vicinity of Tripoli sought Sicilian overlordship after this."
  sic_sicilian_union_title: "Sicilian Union"
  sic_sicilian_union_desc: "Pope Clement IV, who invested, and crowned Charles of Anjou of these two Kingdoms, called this Island, and the Kingdom of Naples with a single name, as can be seen in that Bubble, where he says, Charles of Anjou King of the two Sicilies, Citra, and Ultra the Lighthouse: and this also observed the other Pontiffs, who succeeded that, and made use of the same names. For what 7 other kings, who succeeded the said Charles ... who only of the Kingdom of Naples, and not of Sicily were masters, called the Kingdom of Naples, Sicily from here from the Lighthouse. King Alfonso then, finding himself King of the Island of Sicily, for having succeeded his father Ferrante, and having also with great effort, and strength of arms gained the Kingdom of Naples by Renato's hand, was also called with one voice, King of the Two Sicilies, Citra, and Ultra; And this is to demonstrate not to contraven the authority of the Popes. 4 other kings succeeded Alfonso ... who were lords only of the Kingdom of Naples, and were named, like the others, King of Sicily Citra. But Ferdinand the Catholic, Giovanna his daughter, Charles V imperadore and Philip our king, and Lord, who year (sic) had the dominion of both kingdoms, were titled, and called King of the two Sicilies Citra, and Ultra: the truth therefore is, that these names came from the Roman Pontiffs, (as has been said) who began to introduce, that the Kingdom of Naples was called Sicily."
+ sic_conquest_of_rome_title: "Conquest of Rome"
+ sic_conquest_of_rome_desc: "Founded according to tradition on April 21, 753 BC (although recent excavations in Lapis niger would date the foundation back to 2 centuries earlier), during its three millennia of history it was the first metropolis of humanity, the beating heart of one of the most important ancient civilizations, which influenced society, the culture, language, literature, art, architecture, philosophy, religion, law and customs of the following centuries. Place of origin of the Latin language, it was the capital of the Roman Empire which extended its dominion over the whole Mediterranean basin and most of Europe, the Papal States, subjected to the temporal power of the popes and the future Kingdom of Italy. By definition, Rome, Caput Mundi and Eternal City are defined. Its historic center, delimited by the perimeter of the Aurelian walls, overlapping of testimonies of almost three millennia, is an expression of the historical, artistic and cultural heritage of the western European world."
 
  #4th column
  sic_crossing_strait_title: "Citra Pharum"
@@ -119,7 +121,7 @@
  sic_difendere_lu_mari: "Difendere lu Mari Miditirràniu"
 
  #4
- sic_transumanza: "Transumanza"
+ tts_transumanza: "Transumanza"
  #5
  sic_parramentu_sicilianu_modifier: "Parramentu Sicilianu"
  sic_calabrian_oil: "Calabrian Oil"
