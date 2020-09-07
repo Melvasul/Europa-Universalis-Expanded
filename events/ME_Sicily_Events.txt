@@ -176,7 +176,6 @@ country_event = {
 				who = ROOT
 				modifier = nap_helped_rebellion_war
 			}
-			set_country_flag = naples_france_helped_war
 		}
 	}
 }
@@ -293,7 +292,6 @@ country_event = {
 				who = ROOT
 				modifier = nap_helped_rebellion_war
 			}
-			set_country_flag = naples_austria_helped_war
 		}
 	}
 
@@ -374,7 +372,7 @@ country_event = {
 			hidden_effect = {
 				country_event = {
 					id = ME_Sicily_Events.4
-					days = 735
+					days = 740
 				}
 			}
 			SIC = {
